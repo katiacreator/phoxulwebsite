@@ -431,7 +431,7 @@ a {
     left: -8rem;
     height: 80rem;
     width: 100%;
-    background-color: var(--color-secondary);
+    background-color: red;
     clip-path: polygon(0 0, 45% 0, 100% 100%, 98% 100%);
     z-index: -1;
   }
@@ -492,3 +492,5 @@ a {
   .services__service-cards--card:nth-child(2n + 1) {
     border-top: 1px solid var(--color-quaternary);
   }
+
+
