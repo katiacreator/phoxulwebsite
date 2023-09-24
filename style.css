@@ -368,7 +368,15 @@
     color: var(--color-secondary);
   }
   
+ .hero__copy-rights--social{
+    position: absolute;
+    right: 10rem;
+    writing-mode: vertical-lr;
+ }
 
+ .hero__copy-rights--social:hover i:hover{
+    color: var(--color-quaternary-m);
+ }
 /*----------*----------*----------*----------*---------- Personal Info */
 .personal-info {
     display: flex;
