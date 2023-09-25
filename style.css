@@ -270,7 +270,6 @@
     color: var(--color-quaternary);
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    rotate: -25deg;
   }
   
   .header__nav--link:first-child {
@@ -383,6 +382,14 @@
     color: var(--color-quaternary-m);
  }
 /*----------*----------*----------*----------*---------- Personal Info */
+.parallax2 {
+  height: 100%;
+  width: 100%;
+  background-image: url("images/assets/jared-b-s6GxGrSt8tE-unsplash-resize.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10;
+}
 .personal-info {
     display: flex;
     align-items: center;
@@ -450,6 +457,7 @@
     
     position: relative;
 
+
   }
   
   .personal-info__img::after {
@@ -465,36 +473,19 @@
     height: 100%;
     width: 80%;
     background-color: var(--color-tertiary);
+    z-index: -5;
   }
   
   .personal-info__img img {
     height: 80%;
     width: 80%;
     object-fit: cover;
-    filter: grayscale();
     transition: all 0.6s ease-in-out;
+    z-index: -1;
   }
   
   .personal-info__img:hover img {
     transform: scale(0.95); 
-    filter: none;
-  }
-
-  .personal-info__bg {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    width: 90%;
-    z-index: -2;
-  }
-  
-  .personal-info__bg img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: .85;
   }
 
 
@@ -502,7 +493,7 @@
     font-size: var(--font-size-st-s);
     letter-spacing: .2rem;
     position: absolute;
-    bottom: 0;
+    bottom: 12rem;
     right:0;
     writing-mode: vertical-rl;
     color: var(--color-quaternary-m);
@@ -736,20 +727,6 @@
     padding-bottom: var(--padding-st-s-h);
   }
   
-
-  /* .my-works__title::after{
-    content: 'gallery';
-    top: -15rem;
-    left: -23rem;
-    font-family: var(--font-family-title);
-    font-size: 20rem;
-    letter-spacing: 1rem;
-    color: var(--color-quaternary-m);
-    opacity: .1;
-    display: flex;
-    align-items: center;
-    position: absolute;
-  } */
   
   .my-works__areas {
     display: flex;
@@ -877,7 +854,7 @@
   }
   
   .contact__info--title span{
-    color: var(--color-tertiary-m);
+    color: var(--color-quaternary-m);
   }
 
   .contact__info--link {
