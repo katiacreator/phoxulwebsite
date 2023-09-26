@@ -936,9 +936,6 @@
     color: var(--color-secondary);
   }
 
-  /* .contact__info--title span{
-  } */
-
 
   .contact__info--link {
     padding: var(--padding-st-s-v) var(--padding-st-m-h);
@@ -957,63 +954,36 @@
     border: none;
   }
   
-  .contact__testimonial {
+  .contact__form {
     flex-basis: 40%;
   
     display: flex;
     flex-direction: column;
     gap: 4rem;
   
-    background-color: var(--color-tertiary-m);
+    background-color: var(--color-secondary-m);
     padding: var(--padding-d-mc-v) var(--padding-d-mc-h);
   }
   
+  .contact__form input[type='text'], .contact__form input[type='email'], textarea, .contact__form input[type='submit']{
+    background: transparent;
+    border: none;
+    border-bottom: 2px var(--color-tertiary) solid;
+    outline: none;
+    resize: none;
+    padding: var(--padding-st-s-v);
+  }
+  .contact__form input[type='text']:hover, .contact__form input[type='email']:hover, textarea:hover, .contact__form input[type='submit']:hover{
+    background: var(--color-tertiary);
+  }
 
-  .contact__testimonial--para::before {
-    content: open-quote;  
-    font-size: var(--font-size-st-m);
-    color: var(--color-tertiary);
-  }
-    
-  .contact__testimonial--para::after {
-    content: close-quote;  
-    font-size: var(--font-size-st-m);
-    color: var(--color-tertiary);
-  }
-  
-  .contact__testimonial--info {
-    display: flex;
-    align-items: center;
-    gap: 0 2rem;
-  }
-  
-  .contact__testimonial--info__img {
-    height: 10rem;
-    width: 10rem;
-  }
-  
-  .contact__testimonial--info__img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  .contact__testimonial--info div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact__testimonial--info__name {
-    font-size: var(--font-size-st-sc);
+  .contact__form input::placeholder, .contact__form textarea::placeholder, .contact__form input[type='submit']{
+    color: var(--color-secondary);
+    font-family: var(--font-family-content-m);
+    text-transform: uppercase;
     letter-spacing: .2rem;
   }
   
-  .contact__testimonial--info__role {
-    font-size: var(--font-size-st-s);
-    color: var(--color-quaternary);
-    letter-spacing: .2rem;
-  }
 
 /*----------*----------*----------*----------*---------- Footer */
 .footer {
