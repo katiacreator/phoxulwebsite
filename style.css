@@ -603,7 +603,7 @@
     width: 100%;
   
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 6rem;
   
     margin-top: 5rem;
@@ -612,8 +612,9 @@
   .services__service-cards--card {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 2rem 0;
-  
+    /* border: solid red 1px; */
     padding: var(--padding-st-l-h);
   }
   
@@ -632,6 +633,9 @@
 
   .services__service-cards--card:hover {
     background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+}
+  .services__service-cards--card:hover i{
     color: var(--color-secondary);
 }
 
