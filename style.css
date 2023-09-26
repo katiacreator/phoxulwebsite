@@ -417,7 +417,7 @@
   background-image: url("images/assets/jared-b-s6GxGrSt8tE-unsplash-resize.jpg");
   background-size: cover;
   background-attachment: fixed;
-  z-index: -10;
+  z-index: 1;
 }
 .personal-info {
     display: flex;
@@ -448,6 +448,16 @@
     letter-spacing: .1rem;
   }
 
+  .personal-info__content--para__link {
+    color: var(--color-tertiary-m);
+    text-decoration: underline;
+    z-index: 10;
+  }
+  
+  .personal-info__content--para__link:hover {
+    color: var(--color-accent)!important;
+  }
+
   .personal-info__content--experience {
     display: flex;
     flex-direction: column;
@@ -470,11 +480,15 @@
     font-family: 'Font Awesome 5 Free';
     content: ' \f058';
     padding: 0.5rem;
-    color: var(--color-secondary);
-}
+    color: var(--color-tertiary-m);
+    font-size: var(--font-size-d-s);
+  }
+
   .personal-info__content--experience div .section__para{
     color: var(--color-secondary);
     font-weight: 600;
+    display: flex;
+    gap: 0.2rem;
 }
   
   
