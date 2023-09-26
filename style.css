@@ -921,7 +921,7 @@
   .contact {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
   }
   
@@ -930,7 +930,7 @@
   
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+
   }
   
   .contact__info--title {
@@ -966,6 +966,11 @@
     background-color: var(--color-secondary-m);
     padding: var(--padding-d-mc-v) var(--padding-d-mc-h);
   }
+
+  .contact__form--title{
+    text-align: center;
+    font-family: var(--font-family-content-m);
+  }
   
   .contact__form input[type='text'], .contact__form input[type='email'], textarea, .contact__form input[type='submit']{
     background: transparent;
@@ -974,6 +979,7 @@
     outline: none;
     resize: none;
     padding: var(--padding-st-s-v);
+    font-weight: 600;
   }
   .contact__form input[type='text']:hover, .contact__form input[type='email']:hover, textarea:hover, .contact__form input[type='submit']:hover{
     background: var(--color-tertiary);
@@ -984,6 +990,15 @@
     font-family: var(--font-family-content-m);
     text-transform: uppercase;
     letter-spacing: .2rem;
+  }
+  
+  .contact__form input[type='submit']{
+    background: var(--color-tertiary);
+    border:none;
+  }
+  .contact__form input[type='submit']:hover{
+    background: var(--color-secondary);
+    color: var(--color-quaternary-m);
   }
 
   
