@@ -449,8 +449,11 @@
   .personal-info__content--title span{
     color: var(--color-accent);
     font-size: var(--font-size-d-m);
-    display: flex;
-    justify-content: center;
+  }
+  .personal-info__content--title span:nth-child(2){
+    color: var(--color-secondary);
+    font-size: var(--font-size-d-s);
+
   }
   
   .personal-info__content--para{
