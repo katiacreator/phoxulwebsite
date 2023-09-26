@@ -900,9 +900,14 @@
 .parallax {
     height: 100%;
     width: 100%;
-    background-image: url("images/assets/christina-wocintechchat-com-R_W_9D-53lw-unsplash-resize.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    background: linear-gradient(
+      to bottom,
+      var(--color-quaternary-m),
+      var(--color-secondary-m)
+      ),
+      url("images/assets/christina-wocintechchat-com-R_W_9D-53lw-unsplash-resize.jpg");
+      background-size: cover;
+      background-attachment: fixed;
   }
 
   /* Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/R_W_9D-53lw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -925,8 +930,11 @@
   
   .contact__info--title {
     font-size: var(--font-size-st-mc);
-    color: var(--color-quaternary-m);
+    color: var(--color-secondary);
   }
+
+  /* .contact__info--title span{
+  } */
 
 
   .contact__info--link {
