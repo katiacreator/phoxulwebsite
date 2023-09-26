@@ -491,16 +491,11 @@
     gap: 0.2rem;
 }
   
-  
   .personal-info__img {
     flex-basis: 50%;
-  
     display: flex;
     justify-content: flex-end;
-    
     position: relative;
-
-
   }
   
   .personal-info__img::after {
