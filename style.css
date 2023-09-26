@@ -714,7 +714,8 @@
     font-family: var(--font-family-title);
     line-height: 1;
     position: absolute;
-    left: 10rem;
+    left: 7rem;
+    top: 2rem;
     color: var(--color-quaternary-m);
     grid-column: 1/ span 2;
     margin-top: 4rem;
