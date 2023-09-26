@@ -426,11 +426,12 @@
     gap: 10rem;
     position: relative;
     margin-top: 10rem;
+    margin-bottom: 3rem;
   }
-
+  
   .personal-info__content {
     flex-basis: 50%;
-  
+    
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -447,7 +448,7 @@
     color:var(--color-secondary);
     letter-spacing: .1rem;
   }
-
+  
   .personal-info__content--para__link {
     color: var(--color-tertiary-m);
     text-decoration: underline;
@@ -457,19 +458,19 @@
   .personal-info__content--para__link:hover {
     color: var(--color-accent)!important;
   }
-
+  
   .personal-info__content--experience {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-
+  
   .personal-info__content--experience .section__para {
-      color: var(--color-quaternary-m);
-      letter-spacing: .2rem;
-    }
-
-    
+    color: var(--color-quaternary-m);
+    letter-spacing: .2rem;
+  }
+  
+  
   .personal-info__content--experience div {
     display: flex;
     align-items: center;
@@ -483,13 +484,13 @@
     color: var(--color-tertiary-m);
     font-size: var(--font-size-d-s);
   }
-
+  
   .personal-info__content--experience div .section__para{
     color: var(--color-secondary);
     font-weight: 600;
     display: flex;
     gap: 0.2rem;
-}
+  }
   
   .personal-info__img {
     flex-basis: 50%;
@@ -525,8 +526,8 @@
   .personal-info__img:hover img {
     transform: scale(0.95); 
   }
-
-
+  
+  
   .personal-info__bg figcaption{
     font-size: var(--font-size-st-s);
     letter-spacing: .2rem;
@@ -536,7 +537,7 @@
     writing-mode: vertical-rl;
     color: var(--color-quaternary-m);
   }
-
+  
   figcaption a{
     text-decoration: none;
     color: var(--color-quaternary);
@@ -544,20 +545,21 @@
     padding-right: .2rem;
     font-weight: 600;
   }
-
-
+  
+  
   /*----------*----------*----------*----------*---------- Services */
-.services {
+  .services {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-  
+    
     background-color: var(--color-secondary);
     color: var(--color-primary);
     position: relative;
+    margin-top: 10rem;
   }
-
+  
   .services::before, .my-works::before{
     content: "";
     position: absolute;
@@ -998,7 +1000,7 @@
         var(--color-secondary),
         var(--color-secondary-m)
       ),
-      url("images/footer-bg.jpg");
+      url("images/assets/conor-luddy-IVaKksEZmZA-unsplash-small.jpg");
   
     background-size: cover;
     background-position: center;
