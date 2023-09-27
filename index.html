@@ -12,6 +12,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer>
+    </script>    
     <title>Cyres Website</title>
 </head>
 <body class="container">
@@ -360,15 +363,15 @@
           </h2>
         </div>
 
-          <form class="contact__form">
+          <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
             <h3 class="contact__form--title section__title">Get in touch</h3>
             <input type="text" placeholder="enter your full name" id="contact__form--name-input" required/>
 
             <input type="email" placeholder="enter your email address" id="contact__form--email-input" required/>
 
-            <textarea placeholder="Enter Your message here" id="contact__form--textarea" rows="4"></textarea>
+            <textarea placeholder="Enter Your message here" id="contact__form--textarea" rows="4" required></textarea>
 
-            <input type="submit" id="contact__form--submit-btn" class="btn">
+            <input type="submit" id="contact__form--submit-btn">
           </form>
       </section>
     
