@@ -15,7 +15,7 @@
     <script src="script.js" defer></script>
     <script src="https://smtpjs.com/v3/smtp.js" defer>
     </script>    
-    <title>Cyres Website</title>
+    <title>Cyres Website CLONE!!!!!!!!!</title>
 </head>
 <body class="container">
         <!-- ------------------------------------------------------ Header -->
@@ -30,9 +30,12 @@
             <a class="header__nav--link" href="#">Gallery</a>
             <a class="header__nav--link" href="#">Contact</a>
           </ul>
+          <div class="header__nav--menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </header>  
         <!-- ------------------------------------------------------ Hero -->
-    <section class="hero overall-layout section__padding">
+    <section class="hero section__padding">
         <div class="hero__content">
           <div class="hero__content--email-link">
             katia dot creator at gmail dot com
@@ -53,8 +56,8 @@
   
         <figure class="hero__bg">
           <img loading="lazy" src="images/assets/christina-wocintechchat-com-qmDoSkfcivI-unsplash-resize.jpg" alt="black woman coding" />
-          <figcaption class="hero__bg--caption">Photo by  <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/qmDoSkfcivI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
-          </figcaption>
+          <!-- <figcaption class="hero__bg--caption">Photo by  <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/qmDoSkfcivI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+          </figcaption> -->
         </figure>
         <div class="footer__copy-rights--social hero__copy-rights--social">
           <i class="fa-brands fa-instagram"></i>
@@ -65,7 +68,7 @@
       </section>
   
       <!-- ------------------------------------------------------ Personal Info -->
-      <section class="personal-info overall-layout section__padding parallax2">
+      <section class="personal-info section__padding parallax2">
         <div class="personal-info__content">
           <h2 class="personal-info__content--title section__title">
             <span>Cy Gibson</span> <span>(she/they)</span><br> {UI Designer; Philadelphian}
@@ -119,7 +122,7 @@
       </section>
   
       <!-- ------------------------------------------------------ Services -->
-      <section class="services overall-layout section__padding">
+      <section class="services">
         <h2 class="services__title section__title">Services</h2>
         <div class="services__service-cards">
           
@@ -178,7 +181,7 @@
       </section>
   
       <!-- ------------------------------------------------------ News -->
-      <section class="news overall-layout section__padding">
+      <section class="news">
         <div class="news__info">
           <h2 class="news__info--title section__title">Portfolio</h2>
   
@@ -196,7 +199,7 @@
               
             </div>
             <h3 class="news__article--content__title">
-              Fresh Prince <span>Trivia Chase</span>
+              Fresh Prince <br><span>Trivia Chase</span>
             </h3>
   
             <p class="news__article--content__para section__para">
@@ -354,7 +357,7 @@
       </section>
   
       <!-- ------------------------------------------------------ Contact -->
-      <section class="contact overall-layout parallax section__padding">
+      <section class="contact  parallax">
         <div class="contact__info">
           <h2 class="contact__info--title">
             Need help with creating a stunning website or project? <br><span>
@@ -363,59 +366,29 @@
           </h2>
         </div>
 
-          <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
+        <div class="contact__form">
+          <form onsubmit="sendEmail(); reset(); return false;" >
             <h3 class="contact__form--title section__title">Get in touch</h3>
-            <input type="text" placeholder="enter your full name" id="contact__form--name-input" required/>
+            <input type="text" placeholder="enter your name" id="contact__form--name-input" required/>
 
-            <input type="email" placeholder="enter your email address" id="contact__form--email-input" required/>
-
-            <textarea placeholder="Enter Your message here" id="contact__form--textarea" rows="4" required></textarea>
-
+            <input type="email" placeholder="enter your email" id="contact__form--email-input" required/>
+            
+            <textarea placeholder="Enter Your message" id="contact__form--textarea" rows="4" required></textarea>
+            
             <input type="submit" id="contact__form--submit-btn">
           </form>
+        </div>
       </section>
     
   
       <!-- ------------------------------------------------------ Footer -->
-      <footer class="footer overall-layout section__padding">
-  
-        <div class="footer__author">
-          <div class="footer__author--info">
-            <a class="header__logo" href="#"><span>cy</span>res.</a>
-  
-            <p class="footer__author--info__para">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-              velit magnam doloribus reiciendis
-            </p>
-          </div>
-  
-          <div class="footer__author--quick-links">
-            <h3 class="footer__author--quick-links__title">Quick Links</h3>
-  
-            <ul class="footer__author--quick-links__container">
-              <li>About</li>
-              <li>Portfolio</li>
-              <li>Gallery</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-  
-          <div class="footer__author--contact">
-            <h3 class="footer__author--contact__title">Contact</h3>
-  
-            <ul class="footer__author--contact__container">
-  
-              <div>
-                <i class="fa-solid fa-envelope"></i>
-                <li>katia dot creator at gmail dot com</li>
-              </div>
-  
-            </ul>
-          </div>
-        </div>
+      <footer class="footer">
   
         <div class="footer__copy-rights">
-          <p>K. Cy Gibson. All Rights Reserved</p>
+          <a class="header__logo" href="#"><span>cy</span>res.</a>
+           <p>
+            All Rights Reserved.
+          </p>
   
           <div class="footer__copy-rights--social">
             <i class="fa-brands fa-instagram"></i>
