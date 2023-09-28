@@ -113,6 +113,7 @@
     --font-family-content-m: "Inconsolata", sans-serif;
   }
   
+ 
   body {
     background-color: var(--color-primary);
     font-family: var(--font-family-content);
@@ -181,10 +182,10 @@
 /*----------*----------*----------*----------*---------- Utility Classes */
   
   /*----------*----------*----------* Section Padding */
-  .section__padding {
+  /* .section__padding {
     padding: var(--padding-d-l-v) var(--padding-d-l-h);
 
-  }
+  } */
   
   /*----------*----------*----------* Section Title */
   .section__title {
@@ -197,28 +198,15 @@
   }
   
   /*----------*----------*----------* Section Para */
-  .section__para {
+  /* .section__para {
     font-size: var(--font-size-st-sc);
-
-  }
+  } */
   /*----------*----------*----------*----------*---------- Overall Layout */
   .container {
-    display: grid;
-    grid-auto-columns:
-      repeat(1, 20rem);
-    grid-template-rows: repeat(8, minmax(10rem, min-content));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* .overall-layout {
-    grid-column: 1/ span 12;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-  } */
-
-  /* img{
-    width: 100%;
-    height: 100%;
-  } */
 
   /*----------*----------*----------*----------*---------- Header */
   .header {
@@ -284,6 +272,7 @@
         var(--color-quaternary),
         var(--color-secondary-m), var(--color-quaternary));
     position: relative;
+    padding: 2rem;
   }
   
   .hero__bg {
@@ -355,6 +344,7 @@
     font-size: var(--font-size-d-m);
     font-weight: 500;
     color: var(--color-quaternary);
+    text-align: center;
 
   }
   .hero__content--para span{
@@ -377,7 +367,7 @@
     text-align: center;
     letter-spacing: .3rem;
     display: flex;
-    gap: 0.3rem;
+    gap: 0.2rem;
     align-items: center;
 }
 
@@ -457,14 +447,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 3rem; */
   }
 
   .personal-info__img {
     position: relative;
-    margin-bottom: 3rem;
+    margin: 5rem 0;
     display: flex;
     align-items: center;
+    filter: grayscale();
+  }
+  .personal-info__img:hover {
+    filter: none;
   }
 
   .personal-info__img img {
@@ -474,37 +467,32 @@
   }
   
   .personal-info__content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
     background: var(--color-quaternary-m);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     opacity: .7;
-    /* padding: 3rem; */
-    /* margin: -6rem; */
+    padding: 3rem;
+    margin: 3rem;
   }
 
-  .personal-info__content--title{
-    line-height: 1.3;
-    font-size: var(--font-size-d-s);
-    text-align: left;
+
+  .personal-info__content--title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
   }
 
-  .personal-info__content--title span{
+  .personal-info__content--title span:nth-child(2),.personal-info__content--title span:nth-child(3){
     color: var(--color-accent);
-    font-size: var(--font-size-d-l);
-    font-family: var(--font-family-title);
-  }
-
-  .personal-info__content--title span:nth-child(2){
-    color: var(--color-secondary);
-    font-size: var(--font-size-d-s);
+    font-size: var(--font-size-d-m);
     font-family: var(--font-family-content-m);
   }
+
   
   .personal-info__content--para{
     color:var(--color-secondary);
     letter-spacing: .1rem;
-    width: 80vw;
   }
   
   .personal-info__content--para__link {
@@ -517,7 +505,16 @@
     color: var(--color-accent);
   }
   
-  .personal-info__content--experience {
+  .personal-info__content--experience{
+    background-color: var(--color-quaternary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    padding: 3rem;
+  }
+
+  .personal-info__content--experience-ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -600,7 +597,9 @@
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    background-color: var(--color-secondary);
+    background: 
+    linear-gradient(to top,var(--color-secondary-m),
+        var(--color-secondary), var(--color-secondary));
     color: var(--color-primary);
     width: 100vw;
     padding: 1rem;
