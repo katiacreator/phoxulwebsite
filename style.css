@@ -800,6 +800,7 @@
     position: relative;
     height: 100%;
     width: 100vw;
+    padding: 3rem;
   }
   
   .my-works__title {
@@ -899,8 +900,12 @@
       ),
       url("images/assets/christina-wocintechchat-com-R_W_9D-53lw-unsplash-resize.jpg");
       background-size: cover;
+      background-position: top left;
       background-attachment: fixed;
+      z-index: 1;
+      margin-right: -2rem;
   }
+
 
   /* Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/R_W_9D-53lw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    */
@@ -910,7 +915,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;
+    padding: 3rem;
   }
   
 
@@ -920,8 +925,8 @@
     color: var(--color-secondary);
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    margin-left: -15rem;
+    /* width: 80vw;
+    margin-left: -15rem; */
   }
 
   
@@ -931,7 +936,7 @@
     gap: 2rem;
     background-color: var(--color-secondary-m);
     padding: var(--padding-d-mc-v) var(--padding-d-mc-h);
-    margin-left: -20rem;
+
   }
 
   .contact__form--title{
