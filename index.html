@@ -35,7 +35,7 @@
           </div>
         </header>  
         <!-- ------------------------------------------------------ Hero -->
-    <section class="hero">
+    <section class="hero  section__padding">
         <div class="hero__content">
           <div class="hero__content--email-link">
             cy <span>dot</span> res at gmail <span>dot</span> com
@@ -70,16 +70,18 @@
       </section>
   
       <!-- ------------------------------------------------------ Personal Info -->
-      <section class="personal-info parallax2">
-        <figure class="personal-info__img">
-          <img
+      <section class="personal-info overall-layout section__padding parallax2">
+        <div>
+
+          <figure class="personal-info__img">
+            <img
             loading="lazy"
             src="images/assets/katiagibson-profile-2021-resize.jpg"
             alt="Personal Image"
-          />
-        </figure>
-        <div class="personal-info__content">
-          <h2 class="personal-info__content--title section__title">
+            />
+          </figure>
+          <div class="personal-info__content">
+            <h2 class="personal-info__content--title section__title ">
             <span>Cy Gibson</span> 
             <span>(she/they)</span>
             <span>
@@ -89,12 +91,12 @@
               UI Designer 
             </span>
           </h2>
-  
+          
           <p class="personal-info__content--para section__para">
-              With a passion for studying social behavior and creating abstract photography, I love helping people create amazing visuals that help grow their business and tell their story.
-              <br>
-              <a href="#" target="_blank" class="personal-info__content--para__link ">Read More</a>
-              <br>
+            With a passion for studying social behavior and creating abstract photography, I love helping people create amazing visuals that help grow their business and tell their story.
+            <br>
+            <a href="#" target="_blank" class="personal-info__content--para__link ">Read More</a>
+            <br>
             <!-- <span>
               I am a proud alumnus of Temple University where I found a commitment to using my skills in social research to amplify the stories of silenced communities.
             </span>
@@ -107,8 +109,7 @@
               My goal now is to use my academic skills and my coding skills to work with small businesses to get more traffic to their beautifully constructed applications. 
             </span> -->
           </p>
-  
-          
+        </div>
         </div>
           
         <div class="personal-info__content--experience">
@@ -117,31 +118,34 @@
           </h2>
           <ul class="personal-info__content--experience-ul">
             <div>
-              <li class="section__para">Over 10 Years of Database Management Experience</li>
+              <li class="section__para">10+ years of Database Management Work Experience</li>
+            </div>
+            
+            
+            <div>
+              <li class="section__para">Became a Full-Stack Software Engineer with General Assembly in 3 months</li>
             </div>
             
             <div>
-              <li class="section__para">Became a certified Full-Stack Software Engineer with General Assembly in 3 months</li>
+              <li class="section__para"> 3+ years as web editor for non-profits + small businesses</li>
             </div>
-            
+
             <div>
-              <li class="section__para"> 7+ speaking engagements at conferences at academic institutions</li>
-            </div>
-            <div>
-              <li class="section__para"> 7+ speaking engagements at conferences at academic institutions</li>
+              <li class="section__para"> 7+ speaking engagements on academic panels on diversity + inclusion in healthcare</li>
             </div>
           </ul>
         </div>
         
-
+        
+        
         <!-- <figure class="personal-info__bg">
-            <figcaption>Photo by <a href="https://unsplash.com/@sepiajared?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jared B</a> on <a href="https://unsplash.com/photos/s6GxGrSt8tE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </figcaption>
-          </figure> -->
+          <figcaption>Photo by <a href="https://unsplash.com/@sepiajared?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jared B</a> on <a href="https://unsplash.com/photos/s6GxGrSt8tE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </figcaption>
+        </figure> -->
       </section>
   
       <!-- ------------------------------------------------------ Services -->
-      <section class="services">
+      <section class="services overall-layout section__padding">
         <h2 class="services__title section__title">Skills</h2>
         <div class="services__service-cards">
           
@@ -171,8 +175,8 @@
             <h3>Mobile-First Responsive Design</h3>
           </div>
           <div class="services__service-cards--card">
-            <i class="fa-solid fa-camera"></i>
-            <h3>Photography</h3>
+            <i class="fa-solid fa-clock"></i>
+            <h3>Scrum Master</h3>
           </div>
           <div class="services__service-cards--card">
             <i class="fa-solid fa-folder"></i>
@@ -183,24 +187,21 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <h3>Data Collection & Research</h3>
           </div>
-          <div class="services__service-cards--card">
-            <i class="fa-solid fa-clock"></i>
-            <h3>Scrum Master</h3>
-          </div>
+          
         </div>
       </section>
   
       <!-- ------------------------------------------------------ News -->
-      <section class="news">
+      <section class="news overall-layout section__padding">
         <div class="news__info">
           <h2 class="news__info--title section__title">Portfolio</h2>
   
-          <p class="news__info--para ">
+          <p class="news__info--para section__para">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates,
             velit!
           </p>
         </div>
-  
+        <div class="news__articles-container">       
         <article class="news__article">
           <div class="news__article--content">
             <div class="news__article--content__mini-titles">
@@ -313,15 +314,17 @@
                 Code</a>
             </div>
           </div>
+          
   
           <figure class="news__article--img">
             <img loading="lazy" src="images/news-img.jpeg" alt="Cosina Lens" />
           </figure>
         </article>
+      </div>
       </section>
   
       <!-- ------------------------------------------------------ My Works -->
-      <section class="my-works ">
+      <section class="my-works overall-layout section__padding">
         <h2 class="my-works__title section__title">Gallery</h2>
   
         <div class="my-works__imgs">
@@ -393,12 +396,11 @@
       </section>
   
       <!-- ------------------------------------------------------ Contact -->
-      <section class="contact  parallax">
+      <section class="contact overall-layout section__padding parallax">
         <div class="contact__info">
           <h2 class="contact__info--title">
-            Need help with creating a stunning website or project? <br><span>
+            Need help with creating a stunning website or project? 
                 Connect with me!
-            </span>
           </h2>
         </div>
 
@@ -418,7 +420,7 @@
     
   
       <!-- ------------------------------------------------------ Footer -->
-      <footer class="footer">
+      <footer class="footer overall-layout section__padding">
   
         <div class="footer__copy-rights">
           <a class="header__logo" href="#"><span>cy</span>res.</a>
