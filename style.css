@@ -168,7 +168,20 @@
     width: 100%;
     height: 100%;
   }
-  
+  figcaption{
+    font-size: var(--font-size-st-s);
+    letter-spacing: .2rem;
+    position: absolute;
+    right: 0;
+  }
+
+  figcaption a{
+    text-decoration: none;
+    color: var(--color-secondary);
+    padding-left: .2rem;
+    padding-right: .2rem;
+    font-weight: 600;
+  }
 
 /*----------*----------*----------*----------*---------- Utility Classes */
   
@@ -261,11 +274,8 @@
     linear-gradient(to bottom,var(--color-secondary),
         var(--color-quaternary),
         var(--color-secondary-m), var(--color-quaternary));
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
     padding: 2rem;
-    z-index: 1;
   }
   
   .hero__bg {
@@ -364,7 +374,7 @@
   
   .hero__copy-rights--social i{
     color: var(--color-quaternary-m)!important;
-    padding: 0.5rem;
+    padding: 1rem;
     align-self: center;
     scale: 1.2;
     transition: all .3s ease-in-out .3s;
@@ -414,26 +424,24 @@
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
-
   }
   .personal-info {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    margin-right: -2rem;
   }
 
-
-  .personal-info div:first-child{
+  .personal-info__img {
+    position: relative;
+    margin: 5rem 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
   .personal-info__img img {
-    height: 100%;
+    height: 250px;
     width: 250px;
     object-fit: cover;
   }
@@ -444,15 +452,15 @@
     flex-direction: column;
     align-items: center;
     opacity: .7;
-    padding: 1rem 3rem;
-    margin: 3rem 1rem;
+    padding: 3rem;
+    margin: 3rem;
   }
 
 
   .personal-info__content--title {
     display: flex;
     flex-direction: column;
-
+    margin-top: 3rem;
   }
 
   .personal-info__content--title span:nth-child(2),.personal-info__content--title span:nth-child(3){
@@ -465,7 +473,6 @@
   .personal-info__content--para{
     color:var(--color-secondary);
     letter-spacing: .1rem;
-    font-size: var(--font-size-d-s);
   }
   
   .personal-info__content--para__link {
@@ -483,13 +490,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 3rem; */
+    margin: 3rem;
     padding: 3rem;
   }
 
   .personal-info__content--experience-title{
     font-family: var(--font-family-title);
-    margin-bottom: 2rem;
+    font-size: var(--font-size-d-l);
   }
   .personal-info__content--experience-ul {
     display: flex;
@@ -519,56 +526,12 @@
   
   .personal-info__content--experience div .section__para{
     color: var(--color-secondary);
-    /* font-weight: 600; */
-    font-size: var(--font-size-d-s);
+    font-weight: 600;
     display: flex;
-    align-items: center;
     gap: 0.2rem;
   }
   
- 
-  
-  /* .personal-info__img::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-  } */
-  
-  
-  /* .personal-info__img::after {
-    top: 8%;
-    right: -15%;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-tertiary);
-    z-index: -5;
-  } */
- 
-  
-  /* .personal-info__img:hover img {
-    transform: scale(0.95); 
-    filter: grayscale();
-  } */
-  
-/*   
-  .personal-info__bg figcaption{
-    font-size: var(--font-size-st-s);
-    letter-spacing: .2rem;
-    position: absolute;
-    bottom: 12rem;
-    right:0;
-    writing-mode: vertical-rl;
-    color: var(--color-quaternary-m);
-  }
-  
-  figcaption a{
-    text-decoration: none;
-    color: var(--color-quaternary);
-    padding-left: .2rem;
-    padding-right: .2rem;
-    font-weight: 600;
-  } */
-  
+
   
   /*----------*----------*----------*----------*---------- skills */
   .skills {
@@ -586,14 +549,14 @@
   }
 
 
-  .skills__title{
+  .services__title{
     color: var(--color-quaternary);
     margin-top: 2rem;
 
   }
 
   
-  .skills__skill-cards {
+  .services__service-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -602,22 +565,19 @@
     padding: 1rem;
   }
   
-  .skills__skill-cards--card {
+  .services__service-cards--card {
     display: flex;
     flex-direction: column;
     gap: 2rem 0;
     padding: var(--padding-st-l-h);
-    position: relative;
-    width: 200px;
-    height: 200px;
   }
   
-  .skills__skill-cards--card i {
+  .services__service-cards--card i {
     font-size: var(--font-size-st-l);
     color: var(--color-tertiary);
   }
   
-  .skills__skill-cards--card h3 {
+  .services__service-cards--card h3 {
     font-size: var(--font-size-st-m);
   }
 
@@ -631,11 +591,11 @@
     background-color: var(--color-tertiary);
     color: var(--color-secondary);
 }
-  .skills__skill-cards--card:hover i{
+  .services__service-cards--card:hover i{
     color: var(--color-secondary);
 }
 
-  .skills__skill-cards--card::before {
+  .services__service-cards--card::before {
       content: '';
       top: -5px;
       left: -5px;
@@ -646,7 +606,7 @@
       border-left: 2px solid var(--color-tertiary);
     }
     
-  .skills__skill-cards--card::after {
+  .services__service-cards--card::after {
     content: '';
     bottom: -5px;
     right: -5px;
@@ -657,24 +617,23 @@
     border-right: 2px solid var(--color-tertiary);
   }
 
-  .skills__skill-cards--card:hover::before,
-  .skills__skill-cards--card:hover::after {
+  .services__service-cards--card:hover::before,
+  .services__service-cards--card:hover::after {
     width: 100%;
     height: 100%;
   }
 
 
-  /*----------*----------*----------*----------*---------- News */
-  .news {
+/*----------*----------*----------*----------*---------- News */
+.news {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    justify-content: center;
+    gap: 4rem;
+    width: 100vw;
     padding: 3rem;
-    border: solid red 1px;
-    margin: 3rem;
+    margin-bottom: 6rem;
   }
-
-  /* 
 
 
   .news__info--title {
@@ -686,35 +645,29 @@
 
   .news__info--para{
     text-align: center;
-    font-size: var(--font-size-d-m);
-  }
-  
-  .news__articles-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
   }
 
   .news__article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0;
+    margin: 1rem;
     position: relative;
-    height: 60vh;
   }
-
+  
   .news__article--content {
+    background-color: var(--color-tertiary);
+    position: relative;
+    box-shadow: 4px 10px 4px var(--color-secondary);
     display: flex;
     flex-direction: column;
     gap: 4rem; 
-    padding: 3rem;
-    height: 100%;
+    position: relative;
+    background-color: var(--color-tertiary);
+    box-shadow: 4px 10px 4px var(--color-secondary);
     width: 100%;
-    height: 40vh;
   }
-
+  
   .news__article--content__mini-titles {
     display: flex;
     justify-content: start;
@@ -725,16 +678,15 @@
     left: 0;
     top: 0;
   }
-  
+
   .news__article--content__mini-title {
     font-size: var(--font-size-st-s);
     padding: var(--padding-st-s-v);
     background-color: var(--color-secondary);
     color: var(--color-quaternary);
     align-self: flex-start;
-
   }
-
+   
   .news__article--content__title {
     font-size: var(--font-size-d-l);
     font-family: var(--font-family-title);
@@ -744,21 +696,19 @@
     top: 0rem;
     color: var(--color-quaternary-m);
   }
-  
+
   .news__article--content__para{
     font-size: var(--font-size-d-s);
     color: var(--color-secondary);
     font-family: var(--font-family-content-m);
-    padding-bottom: 3rem;
   }
 
   .news__article--content__links {
-    margin: 3rem;
     display: flex;
     align-items: center;
     column-gap: 2rem;
     position: absolute;
-    bottom: 2rem;
+    bottom: -2rem;
     right: 1rem;
   }
   
@@ -771,18 +721,15 @@
     scale: 1;
     padding: 0.5rem;
   }
-
+  
+  
   .news__article--content__link:hover{
     scale: .95;
   }
   
-  .news__article--img {
-    height: 40vh;
-  }
-  */
   .news__article--img img {
     height: 100%;
-    width: 80%;
+    width: 100%;
     object-fit: cover;
     box-shadow: 4px 10px 4px var(--color-secondary);
   }
@@ -816,7 +763,6 @@
   
   .my-works__imgs--img {
     position: relative;
-    object-fit: cover;
   }
   
   .my-works__imgs--img::before {
@@ -900,6 +846,7 @@
       background-position: top left;
       background-attachment: fixed;
       z-index: 1;
+      margin-right: -2rem;
   }
 
 
@@ -917,7 +864,7 @@
 
   
   .contact__info--title {
-    font-size: var(--font-size-d-m);
+    font-size: var(--font-size-st-m);
     color: var(--color-secondary);
     display: flex;
     flex-direction: column;
@@ -938,7 +885,6 @@
   .contact__form--title{
     text-align: center;
     font-family: var(--font-family-content-m);
-    font-size: var(--font-size-d-m);
   }
   
   .contact__form input[type='text'], .contact__form input[type='email'], textarea, .contact__form input[type='submit']{
@@ -978,15 +924,13 @@
   background: 
     linear-gradient(to bottom,
         var(--color-secondary),
-        var(--color-secondary-m)), url(images/assets/conor-luddy-IVaKksEZmZA-unsplash-small.jpg);
-    background-position: center;
+        var(--color-secondary-m));
     display: flex;
     flex-direction: column;
     gap: 4rem; 
     width: 100vw;
     padding-bottom: 3rem;
   }
-
   
   .footer__copy-rights {
     display: flex;
@@ -1006,10 +950,7 @@
   .footer__copy-rights p{
     color: var(--color-tertiary);
   }
-
-  .footer__copy-rights--social i{
-    padding: 2rem;
-  }
+  
   
 
   .footer__copy-rights--social i:hover{
