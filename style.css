@@ -663,4 +663,103 @@
     font-size: var(--font-size-st-sc);
   }
 
+  /*----------*----------*----------*----------*---------- Portfolio */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: 100%;
+}
+
+.portfolio__title {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.portfolio__cards--container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+ /*----------*----------*----------*----------*---------- Gallery */
+ .gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: 100%;
+}
+
+/*----------*----------*----------*----------*---------- Contact */
+.parallax {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--color-quaternary-m),
+    var(--color-secondary-m)
+    ),
+    url("images/assets/christina-wocintechchat-com-R_W_9D-53lw-unsplash-resize.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/R_W_9D-53lw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+ */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*----------*----------*----------*----------*---------- Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  background: linear-gradient(
+      to bottom,
+      var(--color-secondary),
+      var(--color-secondary-m)
+    ),
+    url("images/assets/conor-luddy-IVaKksEZmZA-unsplash-small.jpg");
+
+  background-size: cover;
+  background-position: center;
+  border: solid red 1px;
+}
+
+.footer__copy-rights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__copy-rights .header__logo{
+  display: flex;
   
+}
+
+.footer__copy-rights p,
+.footer__copy-rights--social i {
+  font-size: var(--font-size-st-sc);
+  color: var(--color-accent);
+}
+
+.footer__copy-rights p{
+  color: var(--color-tertiary);
+}
+
+.footer__copy-rights--social {  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footer__copy-rights--social i:hover{
+  scale: 2;
+  color: var(--color-quaternary-m);
+}
