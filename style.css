@@ -128,7 +128,6 @@
     text-transform: uppercase;
     font-family: var(--font-family-content-m);
     font-weight: 900;
-    /* border: solid red 1px; */
   }
 
   a:hover{
@@ -142,7 +141,7 @@
     cursor: pointer;
   }
 
-    .btn::before{
+  .btn::before{
     content: '';
     background: var(--color-quaternary-m);
     top: 0;
@@ -185,7 +184,7 @@
   
   /*----------*----------*----------* Section Para */
   .section__para {
-    font-size: var(--font-size-st-sc);
+    font-size: var(--font-size-d-s);
     color: var(--color-quaternary);
   }
 
@@ -298,7 +297,7 @@
   position: relative;
   height: 100vh;
   margin-bottom: -10rem;
-  background: linear-gradient(to bottom, var(--color-quaternary-m), var(--color-secondary), var(--color-quaternary));
+  background: linear-gradient(to bottom,var(--color-secondary), var(--color-quaternary-m), var(--color-tertiary),var(--color-secondary-m));
 }
 
 
@@ -331,6 +330,7 @@
   /* margin-top: 10rem; */
 
   padding-top: var(--padding-d-mc-v);
+  z-index: 10;
 }
 
 .hero__content--mini-title {
@@ -353,17 +353,16 @@
 }
 
 .hero__content--title span:nth-child(2){
-  color: var(--color-tertiary);
+  color: var(--color-tertiary-m);
 }
 
 .hero__content--para {
     font-size: var(--font-size-d-m);
-    color: var(--color-quaternary-m);
-    z-index: 10;
+    color: var(--color-secondary);
   }
 
 .hero__content--para span {
-    color: var(--color-tertiary);
+    color: var(--color-tertiary-m);
     font-weight: 700;
     font-size: larger;
   }
@@ -374,9 +373,8 @@
     text-transform: uppercase;
  }
 
- .hero__content--links__my-works,
- .hero__content--links__resume {
-  flex-basis: 50%;
+ .hero__content--links__my-works {
+  flex-basis: 100%;
   padding: var(--padding-st-s-v) var(--padding-st-m-h);
   font-size: var(--font-size-st-sc);
   font-weight: 900;
@@ -387,11 +385,10 @@
 .hero__content--links__my-works {
   background-color: var(--color-accent);
   color: var(--color-secondary);
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
-.hero__content--links__resume {
+.about__content--links__resume {
   background-color: var(--color-tertiary-m);
   color: var(--color-secondary);
 }
@@ -411,6 +408,11 @@
 .hero__copy-rights--social:hover i:hover{
   color: var(--color-quaternary-m);
   scale: 1.5;
+}
+
+.hero__content--email-link{
+  position: absolute;
+  bottom: 6rem;
 }
 
 /*----------*----------*----------*----------*---------- Personal Info */
@@ -439,9 +441,9 @@
   }
 
   .about__content{
-      flex-basis: 30%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 2rem;
       background: var(--color-quaternary-m);
       opacity: .8;
@@ -461,23 +463,59 @@
     .about__content--title span:nth-child(2), .about__content--title span:nth-child(3){
       color: var(--color-secondary);
       font-size: var(--font-size-d-sc);
-      font-family: var(--font-family-content);
+      font-family: var(--font-family-content-m);
     }
     
     .about__content--para{
       color:var(--color-secondary);
-      letter-spacing: .1rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
     }
     
-    .about__content--para__link {
+    .about__content--para span{
       color: var(--color-tertiary-m);
-      text-decoration: underline;
-      z-index: 10;
+      display: inline-block;
+    }
+
+    .about__content--links__resume {
+      padding: var(--padding-st-s-v) var(--padding-st-m-h);
+      font-size: var(--font-size-d-m);
+      font-weight: 900;
+      letter-spacing: .3rem;
+      text-align: center;
+      width: 100%;
+      z-index: 3;
+    }
+
+    .about__content--links__resume{
+      overflow: hidden;
+    }
+    .about__content--links__resume:hover{
+      background-color: var(--color-accent);
     }
     
-    .about__content--para__link:hover {
-      color: var(--color-accent);
+    .about__content--links__resume::before{
+      content: '';
+      background: var(--color-quaternary-m);
+      top: .5rem;
+      left: 0;
+      width: 100%;
+      height: 2rem;
+      position: absolute;
+      transform: translateX(-100%) rotate(45deg);
+      transition: all .5s;
     }
+  
+  
+    .about__content--links__resume:hover::before{
+      transform: translateX(100%) rotate(45deg);
+      transition: all .5s;
+    }
+    /* .about__content--para__link:hover {
+      color: var(--color-accent);
+    } */
     
     .about__content--experience {
       display: flex;
@@ -502,6 +540,7 @@
   
   .about__content--experience-ul .section__para{
     color: var(--color-secondary);
+    font-weight: 600;
     display: flex;
     gap: 0.2rem;
     padding: var(--padding-d-s-h);
