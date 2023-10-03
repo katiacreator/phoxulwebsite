@@ -180,8 +180,27 @@
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-family: var(--font-family-title);
+    position: relative;
   }
   
+  .section__title:before {
+    content: '';
+    top: 3rem;
+    left: 0rem;
+    width: 25%;
+    height: .2rem;
+    background-color: var(--color-secondary-m);
+    position: absolute;    
+  }
+  .section__title:after {
+    content: '';
+    top: 3rem;
+    right: 0;
+    width: 25%;
+    height: .2rem;
+    background-color: var(--color-secondary-m);
+    position: absolute;    
+  }
   /*----------*----------*----------* Section Para */
   .section__para {
     font-size: var(--font-size-d-s);
@@ -297,7 +316,7 @@
   position: relative;
   height: 100vh;
   margin-bottom: -10rem;
-  background: linear-gradient(to bottom,var(--color-secondary), var(--color-quaternary-m), var(--color-tertiary),var(--color-secondary-m));
+  background: linear-gradient(-25deg,var(--color-quaternary), var(--color-secondary));
 }
 
 
@@ -327,7 +346,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* margin-top: 10rem; */
+  margin-top: 10rem;
 
   padding-top: var(--padding-d-mc-v);
   z-index: 10;
@@ -335,7 +354,7 @@
 
 .hero__content--mini-title {
   font-size: var(--font-size-st-sc);
-  color: var(--color-quaternary-m);
+  color: var(--color-secondary);
   letter-spacing: .2rem;
   text-transform: uppercase;
 }
@@ -388,10 +407,6 @@
   width: 100%;
 }
 
-.about__content--links__resume {
-  background-color: var(--color-tertiary-m);
-  color: var(--color-secondary);
-}
 
 .hero__copy-rights--social i{
   font-size: var(--font-size-d-m);
@@ -412,7 +427,14 @@
 
 .hero__content--email-link{
   position: absolute;
-  bottom: 6rem;
+  bottom: 25rem;
+}
+.hero__content--email-link span{
+  font-weight: 800;
+}
+
+.hero__content--email-link:hover{
+  scale: 1.2;
 }
 
 /*----------*----------*----------*----------*---------- Personal Info */
@@ -432,6 +454,11 @@
     margin-top: 10rem;
     margin-bottom: 3rem;
     height: 100%;
+  }
+
+  .about__title{
+    font-size: var(--font-size-d-lc);
+    text-align: center;
   }
 
   .about div:first-child{
@@ -486,7 +513,9 @@
       letter-spacing: .3rem;
       text-align: center;
       width: 100%;
-      z-index: 3;
+      background-color: var(--color-tertiary-m);
+      color: var(--color-secondary);
+      z-index: 9;
     }
 
     .about__content--links__resume{
