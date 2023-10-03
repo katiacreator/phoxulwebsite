@@ -175,30 +175,32 @@
   
   /*----------*----------*----------* Section Title */
   .section__title {
-    font-size: var(--font-size-d-sc);
+    font-size: var(--font-size-d-lc);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-family: var(--font-family-title);
+    color: var(--color-accent);
     position: relative;
+    text-align: center;
   }
   
   .section__title:before {
     content: '';
     top: 3rem;
-    left: 0rem;
+    left: -3rem;
     width: 25%;
     height: .2rem;
-    background-color: var(--color-secondary-m);
+    background-color: var(--color-accent);
     position: absolute;    
   }
   .section__title:after {
     content: '';
     top: 3rem;
-    right: 0;
+    right: -3rem;
     width: 25%;
     height: .2rem;
-    background-color: var(--color-secondary-m);
+    background-color: var(--color-accent);
     position: absolute;    
   }
   /*----------*----------*----------* Section Para */
@@ -455,6 +457,7 @@
     margin-top: 10rem;
     margin-bottom: 3rem;
     height: 100%;
+    padding-bottom: 5rem;
   }
 
   .about__title{
@@ -602,3 +605,62 @@
     transform: scale(0.95); 
     filter: grayscale();
   }
+
+  /*----------*----------*----------*----------*---------- skills */
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-secondary);
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .skills__title:before {
+    content: '';
+    top: 3rem;
+    left: -10rem;
+    width: 50%;
+    height: .2rem;
+    position: absolute;    
+  }
+  .skills__title:after {
+    content: '';
+    top: 3rem;
+    right: -10rem;
+    width: 50%;
+    height: .2rem;
+    position: absolute;    
+  }
+
+  .skills__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 2rem; */
+  }
+  
+  .skills__list--item{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
+    padding: var(--padding-d-s-v);
+  }
+  .skills__list--item:first-child{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: var(--padding-d-s-v);
+  }
+  
+  .skills__list--item i {
+    font-size: var(--font-size-st-l);
+  }
+  
+  .skills__list--item h3 {
+    font-size: var(--font-size-st-sc);
+  }
+
+  
