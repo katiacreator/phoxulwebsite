@@ -241,14 +241,14 @@
       height: 10rem;
     }
 
-    .header__logo {
+    .header__logo{
       font-family: var(--font-family-title);
       font-size: var(--font-size-st-xl);
       color: var(--color-tertiary);
       margin-left: -3rem ;
     }
   
-    .header__logo span{
+    .header__logo span, .footer__logo span{
       color: var(--color-accent);
     }
   
@@ -706,12 +706,110 @@
 /* Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/R_W_9D-53lw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
  */
 
-.contact {
+ .contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
+
+.contact__title{
+  color: var(--color-secondary);
+}
+
+.contact__title:before{
+  content: '';
+  top: 3rem;
+  left: -10rem;
+  width: 50%;
+  height: .2rem;
+  background-color: var(--color-secondary);
+  position: absolute;    
+}
+.contact__title:after {
+  content: '';
+  top: 3rem;
+  right: -10rem;
+  width: 50%;
+  height: .2rem;
+  background-color: var(--color-secondary);
+  position: absolute;    
+}
+
+.contact__info {
+  /* flex-basis: 50%; */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.contact__info--para {
+  font-size: var(--font-size-d-sc);
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.contact--email-link{
+  /* border: solid red 1px; */
+  font-size: var(--font-size-d-m);
+}
+
+.contact--email-link span{
+  font-weight: 600;
+}
+
+/* .contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background-color: var(--color-secondary-m);
+  padding: var(--padding-d-mc-v) var(--padding-d-mc-h);
+} */
+
+/* .contact__form--title{
+  text-align: center;
+  font-size: var(--font-size-d-mc);
+  font-family: var(--font-family-content-m);
+  text-transform: uppercase;
+}
+
+.contact__form input[type='text'], .contact__form input[type='email'], textarea, .contact__form input[type='submit']{
+  background: transparent;
+  border: none;
+  border-bottom: 2px var(--color-tertiary) solid;
+  outline: none;
+  resize: none;
+  padding: var(--padding-st-s-v);
+  font-weight: 600;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.contact__form input[type='text']:hover, .contact__form input[type='email']:hover, textarea:hover, .contact__form input[type='submit']:hover{
+  background: var(--color-tertiary);
+}
+
+.contact__form input::placeholder, .contact__form textarea::placeholder, .contact__form input[type='submit']{
+  color: var(--color-secondary);
+  font-family: var(--font-family-content-m);
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.contact__form input[type='submit']{
+  background: var(--color-tertiary);
+  border:none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.contact__form input[type='submit']:hover{
+  background: var(--color-secondary);
+  color: var(--color-quaternary-m);
+
+} */
+
 
 /*----------*----------*----------*----------*---------- Footer */
 .footer {
@@ -728,20 +826,23 @@
 
   background-size: cover;
   background-position: center;
-  border: solid red 1px;
 }
 
 .footer__copy-rights {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
   gap: 2rem;
 }
 
-.footer__copy-rights .header__logo{
-  display: flex;
-  
+.footer__logo {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-st-xl);
+  color: var(--color-tertiary);
 }
+
 
 .footer__copy-rights p,
 .footer__copy-rights--social i {
