@@ -428,16 +428,17 @@
 .hero__content--email-link{
   position: absolute;
   bottom: 25rem;
+  font-size: var(--font-size-d-m);
 }
 .hero__content--email-link span{
   font-weight: 800;
 }
 
 .hero__content--email-link:hover{
-  scale: 1.2;
+  scale: .95;
 }
 
-/*----------*----------*----------*----------*---------- Personal Info */
+/*----------*----------*----------*----------*---------- About */
 .parallax2 {
   height: 100%;
   width: 100%;
