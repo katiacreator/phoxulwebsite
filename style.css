@@ -678,6 +678,59 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+.portfolio__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 2px var(--color-secondary-m);
+  padding-bottom: 1rem;
+}
+
+.portfolio__card--content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+
+}
+.portfolio__card--content__mini-titles{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: .5rem;
+}
+
+.portfolio__card--content__mini-title{
+  background-color: var(--color-secondary);
+  color: var(--color-quaternary-m);
+  padding: 0.5rem;
+}
+
+.portfolio__card--content__title{
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-d-lc);
+  color: var(--color-accent);
+  line-height: 1.2;
+}
+
+.portfolio__card--content__para{
+  color: var(--color-secondary);
+  font-family: var(--font-family-content-m);
+}
+
+.portfolio__card--content__links{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  
+}
+
+.portfolio__card--content__link{
+  background-color: var(--color-secondary);
+  color: var(--color-quaternary-m);
+  padding: 0.5rem;
+}
  /*----------*----------*----------*----------*---------- Gallery */
  .gallery {
   display: flex;
