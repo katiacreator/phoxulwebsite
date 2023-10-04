@@ -304,9 +304,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 6rem;
+  gap: 2rem;
   position: relative;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 15rem;
   margin-bottom: -10rem;
   background: linear-gradient(-25deg,var(--color-quaternary), var(--color-secondary));
 }
@@ -372,7 +373,7 @@
   }
 
 .hero__content--para span {
-    color: var(--color-tertiary-m);
+    color: var(--color-tertiary);
     font-weight: 700;
     font-size: larger;
   }
@@ -383,22 +384,22 @@
     text-transform: uppercase;
  }
 
- .hero__content--links__gallery {
+ .hero__content--links__portfolio {
   flex-basis: 100%;
   padding: var(--padding-st-s-v) var(--padding-st-m-h);
   font-size: var(--font-size-st-sc);
   font-weight: 900;
   letter-spacing: .3rem;
   text-align: center;
-  margin: 3rem 0;
-}
-
-.hero__content--links__gallery {
   background-color: var(--color-accent);
   color: var(--color-secondary);
   width: 100%;
 }
 
+.hero__copy-rights--social {
+  position: absolute;
+  bottom: 4rem;
+}
 
 .hero__copy-rights--social i{
   font-size: var(--font-size-d-m);
@@ -421,15 +422,14 @@
 
 .hero__content--email-link{
   position: absolute;
-  bottom: 20rem;
+  bottom: 9rem;
   font-size: var(--font-size-d-m);
 }
-.hero__content--email-link span{
-  font-weight: 800;
-}
+
 
 .hero__content--email-link:hover{
   scale: .95;
+  font-weight: 600;
 }
 
 /*----------*----------*----------*----------*---------- About */
@@ -537,13 +537,13 @@
       height: 2rem;
       position: absolute;
       transform: translateX(-100%) rotate(45deg);
-      transition: all .5s;
+      transition: all .3s;
     }
   
   
     .about__content--links__resume:hover::before{
       transform: translateX(100%) rotate(45deg);
-      transition: all .5s;
+      transition: all .3s;
     }
    
     
@@ -567,7 +567,7 @@
     content: ' \f058';
     padding: 0.5rem;
     color: var(--color-tertiary-m);
-    font-size: var(--font-size-d-s);
+    font-size: var(--font-size-d-m);
   }
   
   .about__content--experience-ul .section__para{
@@ -677,6 +677,10 @@
   align-items: center;
   border-bottom: solid 2px var(--color-secondary-m);
   padding-bottom: 1rem;
+}
+
+.portfolio__card:last-child{
+  border: none;
 }
 
 .portfolio__card--content{
@@ -824,7 +828,6 @@
 }
 
 .contact__info {
-  /* flex-basis: 50%; */
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -837,11 +840,11 @@
 }
 
 .contact--email-link{
-  /* border: solid red 1px; */
+  text-align: center;
   font-size: var(--font-size-d-m);
 }
 
-.contact--email-link span{
+.contact--email-link:hover{
   font-weight: 600;
 }
 
