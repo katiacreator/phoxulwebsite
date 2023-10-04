@@ -742,15 +742,14 @@
 }
 
 .gallery__title {
-
-
   position: relative;
   padding-bottom: var(--padding-st-s-h);
 }
 
 .gallery__imgs {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  gap: 4rem;
 }
 
