@@ -1,14 +1,14 @@
 /* media queries */
 /* MOBILE */
 @media screen and (min-width: 475px){
-    .personal-info__content--para{
+    .about__content--para{
       font-size: var(--font-size-d-s);
     }
   
-    .personal-info__content--experience-title{
+    .about__content--experience-title{
       font-size: var(--font-size-d-l);
     }
-    .personal-info__content--experience-ul{
+    .about__content--experience-ul{
       font-size: var(--font-size-d-s);
     }
   
@@ -40,7 +40,7 @@
   }
   
   @media screen and (min-width: 525px) {
-    .personal-info__content--title{
+    .about__content--title{
       margin-top: 0;
       justify-content: center;
     } 
@@ -61,7 +61,7 @@
   }
   
   @media screen and (min-width: 615px){
-    .personal-info__content--experience-ul{
+    .about__content--experience-ul{
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -100,12 +100,12 @@
       z-index: -2;
     }
   
-   .personal-info__content{
+   .about__content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
    }
   
-   .personal-info__content--experience-ul{
+   .about__content--experience-ul{
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
    }
@@ -325,14 +325,14 @@
   }
   /*----------*----------*----------*----------*---------- Personal Info */
   
-    .personal-info {  
+    .about {  
       gap: 5rem;
       margin: 0;
       justify-content: center;
       height: 100%;
     }
   
-    .personal-info div{  
+    .about div{  
       display: flex;
       /* flex-direction: column; */
       justify-content: center;
@@ -340,12 +340,12 @@
   
     }
     
-    .personal-info__img {
+    .about__img {
       width: 30vw;
       justify-content: flex-start;
     }
     
-    .personal-info__img img {
+    .about__img img {
       height: 300px;
       width: 300px;
       object-fit: cover;
@@ -354,12 +354,12 @@
       z-index: -1;
     }
     
-    .personal-info__img:hover img {
+    .about__img:hover img {
       transform: scale(0.95); 
       filter: none;
     }
     
-    .personal-info__img::after {
+    .about__img::after {
       content: "";
       position: absolute;
       z-index: -5;
@@ -371,7 +371,7 @@
       box-shadow: 4px 10px 4px var(--color-secondary);
     }
   
-    .personal-info__content {
+    .about__content {
       gap: 2rem;
       opacity: .8;
       margin: 0;
@@ -380,30 +380,30 @@
       box-shadow: 4px 10px 4px var(--color-secondary);
     }
     
-    .personal-info__content--title{
+    .about__content--title{
       line-height: 1;
       font-size: var(--font-size-d-s);
       text-align: center;
       margin: 0;
     }
     
-    .personal-info__content--title span{
+    .about__content--title span{
       color: var(--color-accent);
       font-size: var(--font-size-d-m);
       font-family: var(--font-family-title);
     }
-    .personal-info__content--title span:nth-child(2),.personal-info__content--title span:nth-child(3){
+    .about__content--title span:nth-child(2),.about__content--title span:nth-child(3){
       color: var(--color-secondary);
       font-size: var(--font-size-st-m);
       font-family: var(--font-family-content-m);
     }
     
-    .personal-info__content--experience{
+    .about__content--experience{
       width: 40vw;
       box-shadow: 4px 4px 4px var(--color-secondary);
     }
   
-    .personal-info__content--experience-ul {
+    .about__content--experience-ul {
       display: flex;
       flex-direction: column;
     }

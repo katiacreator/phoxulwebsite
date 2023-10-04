@@ -16,6 +16,7 @@
   
     /*----------*----------*----------* Website Theme */
     --color-accent: rgb(255, 0, 102);
+    --color-accent-m: rgb(93, 69, 78);
     --color-primary: hsl(200, 3%, 35%);
   
     --color-secondary: hsl(0, 0%, 11%);
@@ -494,18 +495,11 @@
     }
     
     .about__content--para{
-      color:var(--color-secondary);
+      color: var(--color-secondary);
       font-weight: 600;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      flex-basis: 100%;
-    }
-    
-    .about__content--para span{
-      color: var(--color-tertiary-m);
-      display: inline-block;
     }
 
     .about__content--links__resume {
@@ -609,6 +603,7 @@
     height: 100%;
     width: 100%;
     margin-top: -3rem;
+    position: relative;
   }
 
 
