@@ -130,7 +130,7 @@
     font-weight: 900;
   }
 
-  a:hover{
+  .btn:hover{
     scale: 1;
     background: transparent;
     color: var(--color-secondary);
@@ -223,8 +223,8 @@
 
   section{
     padding: var(--padding-d-mc-v) var(--padding-d-mc-h);
-    height: 100vh;
-
+    height: 100%;
+    width: 100%;
   }
 
   img{
@@ -340,7 +340,6 @@
   align-items: center;
   text-align: center;
   margin-top: 10rem;
-
   padding-top: var(--padding-d-mc-v);
   z-index: 10;
 }
@@ -712,6 +711,7 @@
 .portfolio__card--content__para{
   color: var(--color-secondary);
   font-family: var(--font-family-content-m);
+  font-size: var(--font-size-d-m);
 }
 
 .portfolio__card--content__links{
@@ -892,8 +892,8 @@
 }
 
 .footer__copy-rights--social {  
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: space-between;
   gap: 2rem;
 }
 
