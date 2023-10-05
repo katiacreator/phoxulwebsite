@@ -97,14 +97,15 @@
   .hero__content--email-link{
     writing-mode: vertical-lr;
     rotate: 180deg;
-    left: 7rem;
+    left: 3rem;
     bottom: 22rem;
     font-size: var(--font-size-st-s);
+    color: var(--color-secondary);
+    font-weight: 600;
+    z-index: 20;
   }
   
-  .hero__content--email-link span{
-    font-size: var(--font-size-st-s);
-  }
+ 
   
   .hero__content--email-link::after{
     content: '';
@@ -113,7 +114,7 @@
     width: 1px;
     background-color: var(--color-secondary);
     left: .7rem;
-    top: 21rem;
+    top: 15rem;
   }
   
   
