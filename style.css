@@ -134,9 +134,9 @@
 
   .btn:hover{
     scale: 1;
-    background: transparent;
+    background: var(--color-quaternary-m);
     color: var(--color-secondary);
-    border: solid 1px var(--color-accent);
+    border: solid 2px var(--color-tertiary-m);
   } 
   
   .btn{
@@ -244,19 +244,7 @@
       width: 100vw;
       height: 10rem;
     }
-/* 
-    .header::after {
-      content: "";
-      position: absolute;
-      bottom: -65rem;
-      left: 0;
-      height: 60rem;
-      width: 100%;
-      background-color: var(--color-tertiary-m);
-      clip-path: polygon(0% 70%, 100% 0%, 100% 70%, 0% 100%, 0% 10%);
-      clip-path: polygon(0 20%, 100% 19%, 100% 73%, 0 74%);
-      z-index: -1;
-  }  */
+
 
     .header__logo{
       font-family: var(--font-family-title);
