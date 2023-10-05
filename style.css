@@ -626,16 +626,16 @@
   .skills__title:before {
     content: '';
     top: 3rem;
-    left: -20rem;
-    width: 100%;
+    left: -10rem;
+    width: 50%;
     height: .2rem;
     position: absolute;    
   }
   .skills__title:after {
     content: '';
     top: 3rem;
-    right: -20rem;
-    width: 100%;
+    right: -10rem;
+    width: 50%;
     height: .2rem;
     position: absolute;    
   }
