@@ -40,35 +40,31 @@
       position: absolute;
       bottom: -60rem;
       left: 0rem;
-      height: 70rem;
-      width: 100%;
-      background-color: var(--color-tertiary);
-      clip-path: polygon(0 20%, 100% 19%, 100% 73%, 0 74%);
-      /*
-      clip-path: circle(50% at 51% 100%);
-      clip-path: circle(49.5% at 51% 100%); */
-      /* clip-path: ellipse(78% 40% at 21% 91%); */
-      clip-path: polygon(0% 70%, 90% 0%, 100% 50%, 0% 100%, 0% 0%);
-      z-index: 5;
+      height: 50rem;
+      width: 70%;
+      /* background-color: var(--color-primary-m); */
+      clip-path: polygon(0 20%, 90% 12%, 100% 78%, 0 74%);
+      /* clip-path: polygon(0% 70%, 90% 0%, 100% 50%, 0% 100%, 0% 0%); */
+      z-index: 10;
     }
  
   
    /*----------*----------*----------*----------*---------- Hero */
    .hero {
-    height: 100vh;
+    height: 80vh;
   
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  
+    background: var(--color-secondary-m);
     position: relative;
   }
   
   .hero__bg {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 100%;
+    transform: translateX(-20%);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -77,7 +73,7 @@
   .hero__bg img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: .85;
   }
 
@@ -119,7 +115,6 @@
     left: .7rem;
     top: 21rem;
   }
-  
   
   
   .hero__content--title {

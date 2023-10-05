@@ -16,7 +16,7 @@
   
     /*----------*----------*----------* Website Theme */
     --color-accent: rgb(255, 0, 102);
-    --color-accent-m: rgb(243, 151, 184);
+    --color-accent-m: rgba(241, 74, 135, 0.576);
     --color-primary: hsl(200, 3%, 35%);
   
     --color-secondary: hsl(0, 0%, 11%);
@@ -25,6 +25,7 @@
   
     --color-tertiary: rgba(0, 255, 255, 0.551);
     --color-tertiary-m: rgb(5, 153, 153);
+    --color-tertiary-n: rgba(9, 42, 84, 0.386);
     --color-quaternary: rgba(255, 255, 255, 0.653);
     --color-quaternary-m: rgba(255, 255, 255);
   
