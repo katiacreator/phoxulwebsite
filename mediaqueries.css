@@ -131,6 +131,7 @@
     text-align: left;
     z-index: 10;
   }
+
   .hero__content--para span {
     color: var(--color-accent);
     text-shadow: 2px 2px 2px var(--color-secondary);
@@ -142,27 +143,22 @@
     color: var(--color-quaternary-m);
   }
   
-  .hero__content--links__resume {
-    background-color: var(--color-accent);
-    color: var(--color-secondary);
-  }
   
   .hero__copy-rights--social{
     position: absolute;
-    right: 8rem;
+    right: 3rem;
+    bottom: 28rem;
     writing-mode: vertical-lr;
+    z-index: 10;
+    /* border: solid red 1px; */
   }
   
   .hero__copy-rights--social i{
-    color: var(--color-accent) !important;
+    color: var(--color-accent)!important;
+    padding: 0.5rem;
   }
   .hero__copy-rights--social:hover i{
     color: var(--color-accent);
-  }
-  
-  .hero__copy-rights--social:hover i:nth-child(3):hover, .hero__copy-rights--social:hover i:nth-child(4):hover{
-    color: var(--color-accent)!important;
-    scale: 2;
   }
   
   
@@ -172,7 +168,7 @@
   height: 10rem;
   width: 1px;
   background-color: var(--color-accent);
-  left: 1rem;
+  right: 1rem;
   bottom: -12rem;
   }
   /*----------*----------*----------*----------*---------- Personal Info */
