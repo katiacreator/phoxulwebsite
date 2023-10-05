@@ -82,13 +82,33 @@
     }
     
     /* about */
+
     .about__img img{
-        height: 50%;
-        width: 50%;
+        height: 300px;
+        width: 300px;
+      }
+      
+    
+    .about__img::after {
+        content: "";
+        position: absolute;
+        z-index: -5;
+        top: 7%;
+        right: 27%;
+        height: 300px;
+        width: 300px;
+        background-color: var(--color-tertiary-m);
+        box-shadow: 4px 10px 4px var(--color-secondary);
+      }
+
+    .about__content{
+      background-color: red;
+      gap: 1rem;
     }
-    .about__content--para {
+    /* .about__content--para {
         width: 500px;
-    }
+        background-color: red;
+    } */
     .about__content--links__resume{
         width: 50%;
     }
