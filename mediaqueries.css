@@ -48,7 +48,7 @@
       clip-path: circle(50% at 51% 100%);
       clip-path: circle(49.5% at 51% 100%); */
       /* clip-path: ellipse(78% 40% at 21% 91%); */
-      /* clip-path: polygon(0% 70%, 90% 0%, 100% 50%, 0% 100%, 0% 0%); */
+      clip-path: polygon(0% 70%, 90% 0%, 100% 50%, 0% 100%, 0% 0%);
       z-index: 5;
     }
  
@@ -186,7 +186,7 @@
   }
   /*----------*----------*----------*----------*---------- Personal Info */
   
-    .about {  
+    /* .about {  
       gap: 5rem;
       margin: 0;
       justify-content: center;
@@ -195,7 +195,6 @@
   
     .about div{  
       display: flex;
-      /* flex-direction: column; */
       justify-content: center;
       align-items: center;
   
@@ -228,7 +227,6 @@
       right: 10%;
       height: 100%;
       width: 80%;
-      /* background-color: var(--color-tertiary-m); */
       box-shadow: 4px 10px 4px var(--color-secondary);
     }
   
@@ -267,10 +265,10 @@
     .about__content--experience-ul {
       display: flex;
       flex-direction: column;
-    }
+    } */
     
     /*----------*----------*----------*----------*---------- skills */
-    .skills {
+    /* .skills {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -359,12 +357,12 @@
     .skills__list--item:hover::after {
       width: 100%;
       height: 100%;
-    }
+    } */
   
   
   /*----------*----------*----------*----------*---------- News */
   
-     .portfolio__info--para{
+     /* .portfolio__info--para{
       margin-bottom: 4rem;
      }
   
@@ -448,10 +446,10 @@
     
     .portfolio__card--img:hover img {
       transform: scale(0.95);
-    }
+    } */
   
   /*----------*----------*----------*----------*---------- Gallery */
-    .gallery {
+    /* .gallery {
       gap: 3rem;
     }
   
@@ -472,12 +470,12 @@
     .gallery__imgs--img img {
       height: 100%;
       width: 100%;
-    }
+    } */
     
     
   
   /*----------*----------*----------*----------*---------- Contact */  
-    .contact{
+    /* .contact{
       flex-direction: row;
       column-gap: 10rem;
     }
@@ -501,7 +499,7 @@
     .contact__form--title{
       font-family: var(--font-family-content-m);
       font-size: var(--font-size-d-sc);
-    }
+    } */
     
   
   
