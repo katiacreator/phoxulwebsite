@@ -12,7 +12,7 @@
     /*----------*----------*----------* Section Para */
     .section__para {
       font-size: var(--font-size-st-sc);
-    }  
+    } 
     /*----------*----------*----------*----------*---------- Overall Layout */
     .container {
       display: grid;
