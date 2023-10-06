@@ -96,9 +96,6 @@
     .about__img {
       grid-column: 1/ span 2;
       grid-row: 2/ span 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
     .about__content{
       grid-column: 3/ span 2;
@@ -113,8 +110,12 @@
       align-items: center;
     }
 
+    .about__content--experience div li::before{
+      font-size: var(--font-size-d-s);
+    }
+
     .about__img img{
-        height: 80%;
+        height: 50%;
         width: 300px;
     }
 
@@ -204,15 +205,7 @@
       .media-element > img{
         height: 100%;
         width: 100%;
-        /* border: solid red 3px; */
       }
-      
-
-
-
-
-
-
 
       /* contact */
       .contact{
@@ -226,8 +219,8 @@
       .contact__title:before{
         content: '';
         top: 3rem;
-        left: -30rem;
-        width: 50%;
+        left: -33rem;
+        width: 70%;
         height: .2rem;
         background-color: var(--color-secondary);
         position: absolute;    
@@ -235,8 +228,8 @@
       .contact__title:after {
         content: '';
         top: 3rem;
-        right: -30rem;
-        width: 50%;
+        right: -33rem;
+        width:70%;
         height: .2rem;
         background-color: var(--color-secondary);
         position: absolute;    
