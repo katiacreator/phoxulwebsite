@@ -121,7 +121,7 @@
     background-color: var(--color-primary);
     font-family: var(--font-family-content);
     line-height: 1.6;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     letter-spacing: .2rem;
   }
   
@@ -169,6 +169,24 @@
     list-style: none;
   }
 
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--color-secondary); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-accent); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-tertiary); 
+  }
 
 
 /*----------*----------*----------*----------*---------- Utility Classes */
@@ -747,85 +765,55 @@
 }
  /*----------*----------*----------*----------*---------- Gallery */
  
-
-
-.scroller {
-  max-width: 600px;
+.gallery{
+  background-color: var(--color-secondary);
+  /* width: 100vw;
+  height: 100%; */
 }
 
-.scroller__inner {
-  padding-block: 1rem;
-  display: flex;
-  flex-wrap: wrap;
+.gallery__imgs {
+  inline-size: min(100% - 4rem, 70rem);
+  margin-inline: auto;
+  /* background-color: rebeccapurple; */
+}
+
+.media-scroller {
+  display: grid;
+  gap: 3rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 99%;
+  padding: 0 .5rem 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  width: 100vw;
+}
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
   gap: 1rem;
+  padding: 1rem;
 }
 
-.scroller[data-animated="true"] {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 10%,
-    white 80%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scroller[data-animated="true"] .scroller__inner {
-  width: max-content;
-  flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
-}
-
-.scroller[data-direction="right"] {
-  --_animation-direction: reverse;
-}
-
-.scroller[data-direction="left"] {
-  --_animation-direction: forwards;
-}
-
-.scroller[data-speed="fast"] {
-  --_animation-duration: 20s;
-}
-
-.scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
-}
-
-@keyframes scroll {
-  to {
-    transform: translate(calc(-50% - 0.5rem));
-  }
-}
-
-.gallery__imgs--img{
-  position: relative;
-}
-
-
-.gallery__imgs--img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 27.5rem;
-  width: 27.5rem;
-  background-color: var(--color-secondary-m);
-  transition: all 0.25s ease-in-out;
-}
-
-.gallery__imgs--img:hover::before {
-  background: none;
-}
-
-.gallery__imgs--img img {
-  width: 27.5rem;
-  height: 27.5rem;
+.media-element > img {
+  width: 85vw;
+  height: 30rem;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  box-shadow: 12px 12px 14px var(--color-secondary);
+
 }
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 2rem 1rem;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+
 
 /*----------*----------*----------*----------*---------- Contact */
 .parallax {
