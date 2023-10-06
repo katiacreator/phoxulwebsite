@@ -266,99 +266,9 @@
     }
     
     /*----------*----------*----------*----------*---------- skills */
-    /* .skills {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+   
   
-      background-color: var(--color-secondary);
-      color: var(--color-primary);
-      position: relative;
-    }
-    
-    
-    .skills__title{
-      color: var(--color-quaternary);
-      position: relative;
-      letter-spacing: .2rem;
-    }
-    
-    
-    .skills__para {
-      text-align: center;
-    }
-    
-    .skills__para span {
-      display: block;
-    }
-    
-    .skills__list {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-      gap: 6rem;
-      margin-top: 5rem;
-    }
-    
-    .skills__list--item {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 2rem 0;
-      padding: var(--padding-st-l-h);
-    }
-    
-    .skills__list--item i {
-      font-size: var(--font-size-st-l);
-      color: var(--color-tertiary);
-    }
-    
-    .skills__list--item  h3 {
-      font-size: var(--font-size-st-m);
-    }
-  
-    .skills__list--item  {
-      position: relative;
-    }
-  
-    .skills__list--item:hover {
-      background-color: var(--color-tertiary);
-      color: var(--color-secondary);
-    }
-    .skills__list--item:hover i{
-      color: var(--color-secondary);
-    }
-    
-    .skills__list--item::before {
-      content: '';
-      top: -5px;
-      left: -5px;
-      height: 24px;
-      width: 24px;
-      position: absolute;
-      border-top: 2px solid var(--color-tertiary);
-      border-left: 2px solid var(--color-tertiary);
-      }
-      
-      .skills__list--item::after {
-      content: '';
-      bottom: -5px;
-      right: -5px;
-      height: 24px;
-      width: 24px;
-      position: absolute;
-      border-bottom: 2px solid var(--color-tertiary);
-      border-right: 2px solid var(--color-tertiary);
-    }
-  
-    .skills__list--item:hover::before,
-    .skills__list--item:hover::after {
-      width: 100%;
-      height: 100%;
-    } */
-  
-  
-  /*----------*----------*----------*----------*---------- News */
+  /*----------*----------*----------*----------*---------- Portfolio */
   
      /* .portfolio__info--para{
       margin-bottom: 4rem;
@@ -447,30 +357,8 @@
     } */
   
   /*----------*----------*----------*----------*---------- Gallery */
-    /* .gallery {
-      gap: 3rem;
-    }
+   
   
-    
-    .gallery__imgs {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, min-content);
-      gap: 2rem;
-    }
-    
-    .gallery__imgs--img {
-      position: relative;
-      height: 100%;
-      width: 100%;
-    }
-    
-    .gallery__imgs--img img {
-      height: 100%;
-      width: 100%;
-    } */
-    
-    
   
   /*----------*----------*----------*----------*---------- Contact */  
     /* .contact{
