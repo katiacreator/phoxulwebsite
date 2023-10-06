@@ -191,14 +191,13 @@
         width: 100vw;
       }
       .media-scroller {
-        grid-auto-columns: 50%;
+        grid-auto-columns: 45%;
         width: 90vw;
       }
 
       .media-element {
         grid-template-columns: 30rem;
         grid-template-rows: 30rem;
-        /* border: solid white 3px; */
         width: 60%;
       }
 
