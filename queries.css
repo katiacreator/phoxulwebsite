@@ -179,13 +179,22 @@
       }
 
       .portfolio__card--content__mini-title, .portfolio__card--content__link{
-        padding: 1rem;
+        padding: .5rem;
         font-size: var(--font-size-d-s);
       }
 
       .portfolio__info--para, .portfolio__cards--container{
         padding: 0 5rem;
       }
+
+      .portfolio__card--content__title{
+        font-size: var(--font-size-d-mc);
+      }
+     .portfolio__card--content__para{
+        font-size: var(--font-size-d-s);
+      }
+
+      
 
       /* gallery */
       .gallery{
