@@ -770,7 +770,7 @@
 .portfolio__card-scroller {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 99%;
+  grid-auto-columns: auto;
   padding: 0 .5rem 1rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;

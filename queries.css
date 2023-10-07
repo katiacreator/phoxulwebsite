@@ -206,7 +206,6 @@
       .portfolio__card-scroller{
         grid-column: 2/ -1;
         width: 45vw;
-        grid-auto-columns: auto;
       }
       
 
@@ -215,8 +214,8 @@
         width: 100vw;
       }
       .media-scroller {
-        grid-auto-columns: 45%;
         width: 90vw;
+        grid-auto-columns: 45%;
       }
 
       .media-element {
