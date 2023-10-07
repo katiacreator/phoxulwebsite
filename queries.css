@@ -161,7 +161,7 @@
       }
 
       /* portfolio */
-    
+      
       .portfolio__info--para{
         font-size: var(--font-size-d-s);
         text-align: center;
@@ -169,13 +169,22 @@
 
       .portfolio__cards--container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        grid-template-rows: repeat(4, min-content);
+        max-width: 70rem;
       }
       
       .portfolio__card{
         border: none;
         padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        gap: 3rem;
+        margin-left: -5rem;
+      }
+
+      .portfolio__card--content{
+        grid-column: 1/2;
+        width: 40vw;
       }
 
       .portfolio__card--content__mini-title, .portfolio__card--content__link{
@@ -194,6 +203,11 @@
         font-size: var(--font-size-d-s);
       }
 
+      .portfolio__card-scroller{
+        grid-column: 2/ -1;
+        width: 45vw;
+        grid-auto-columns: auto;
+      }
       
 
       /* gallery */

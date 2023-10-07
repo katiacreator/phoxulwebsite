@@ -769,14 +769,12 @@
 /* horizontal image scroller for screenshots */
 .portfolio__card-scroller {
   display: grid;
-  /* gap: 3rem; */
   grid-auto-flow: column;
   grid-auto-columns: 99%;
   padding: 0 .5rem 1rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   width: 90vw;
-  /* margin: -1rem; */
 }
 
 /* Track */
