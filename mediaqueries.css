@@ -144,10 +144,9 @@
   .hero__copy-rights--social {
     position: absolute;
     right: 3rem;
-    bottom: 28rem;
+    bottom: 30rem;
     writing-mode: vertical-lr;
     z-index: 10;
-    /* border: solid red 1px; */
   }
 
   .hero__copy-rights--social i {
@@ -367,5 +366,11 @@
     width: 70%;
     clip-path: polygon(0 20%, 90% 12%, 100% 78%, 0 74%);
     z-index: 10;
+  }
+
+  .hero__copy-rights--social {
+    right: 8rem;
+    bottom: 30rem;
+
   }
 }
