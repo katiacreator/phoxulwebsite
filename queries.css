@@ -266,6 +266,15 @@
 }
 
 @media screen and (min-width: 900px) {
+  .hero__copy-rights--social {
+    bottom: 20rem;
+  }
+
+  .hero__content--email-link {
+    bottom: 10rem;
+   
+  }
+
   .portfolio__card--content{
     width: 45vw;
   }
