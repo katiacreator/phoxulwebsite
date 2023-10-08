@@ -82,7 +82,7 @@
 
   /* about */
 
-  .about>div:first-child {
+  .about > div:first-child {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, min-content);

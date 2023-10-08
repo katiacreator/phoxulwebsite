@@ -249,6 +249,10 @@
     font-size: var(--font-size-d-m);
   }
 
+  .about__content--links__resume {
+    width: 60%;
+  }
+
   /*----------*----------*----------*----------*---------- skills */
 
 
