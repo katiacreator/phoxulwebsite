@@ -67,7 +67,7 @@
     position: absolute;
     top: 0;
     right: 100%;
-    transform: translateX(-20%);
+    transform: translateX(-15%);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -138,12 +138,6 @@
   .hero__content--para span {
     color: var(--color-accent);
     text-shadow: 2px 2px 2px var(--color-secondary);
-
-  }
-
-  .hero__content--links__portfolio {
-    background-color: var(--color-accent);
-    color: var(--color-secondary);
   }
 
 
@@ -185,17 +179,18 @@
     width: 100%;
     padding: 0;
     margin: 0;
+    position: relative;
   }
 
   .about__img {
     position: absolute;
-    top: -20rem;
-    right: -28rem;
+    top: 15rem;
+    right: -25rem;
   }
 
   .about__img img {
-    height: 30%;
-    width: 30%;
+    height: 60%;
+    width: 40%;
     object-fit: cover;
     transition: all 0.6s ease-in-out;
     box-shadow: 4px 10px 4px var(--color-secondary);
@@ -205,18 +200,6 @@
   .about__img:hover img {
     transform: scale(0.95);
     filter: none;
-  }
-
-  .about__img::after {
-    content: "";
-    position: absolute;
-    z-index: -5;
-    top: 40rem;
-    right: 32rem;
-    height: 30%;
-    width: 30%;
-    background-color: var(--color-tertiary-m);
-    box-shadow: 4px 10px 4px var(--color-secondary);
   }
 
 

@@ -16,7 +16,7 @@
 
   /*----------*----------*----------* Website Theme */
   --color-accent: rgb(255, 0, 102);
-  --color-accent-m: rgba(241, 74, 135, 0.576);
+  --color-accent-m: rgb(248, 169, 198);
   --color-primary: hsl(200, 3%, 35%);
 
   --color-secondary: hsl(0, 0%, 11%);
@@ -135,9 +135,8 @@ a {
 
 .btn:hover {
   scale: 1;
-  background: var(--color-tertiary-m);
+  background: var(--color-quaternary-m);
   color: var(--color-secondary);
-  border: solid 2px var(--color-tertiary-m);
 }
 
 .btn {
@@ -435,7 +434,7 @@ img {
   font-weight: 900;
   letter-spacing: .3rem;
   text-align: center;
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-m);
   color: var(--color-secondary);
   width: 100%;
 }
