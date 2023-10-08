@@ -67,7 +67,7 @@
     position: absolute;
     top: 0;
     right: 100%;
-    transform: translateX(-15%);
+    transform: translateX(-18%);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -354,5 +354,18 @@
   .footer__copy-rights--social i:hover {
     scale: 2;
     color: var(--color-tertiary-m);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -80rem;
+    left: 0rem;
+    height: 70rem;
+    width: 70%;
+    clip-path: polygon(0 20%, 90% 12%, 100% 78%, 0 74%);
+    z-index: 10;
   }
 }
