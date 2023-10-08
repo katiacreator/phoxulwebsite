@@ -1,69 +1,68 @@
+@media screen and (min-width: 1024px) {
+  .section__padding {
+    padding: var(--padding-d-s-v) var(--padding-d-s-h);
+  }
 
-  @media screen and (min-width: 1024px) {
-    .section__padding {
-      padding: var(--padding-d-s-v) var(--padding-d-s-h);
-    }
-    
-    /*----------*----------*----------* Section Title */
-    .section__title {
-      font-size: var(--font-size-d-mc);
-    }
-    
-    /*----------*----------*----------* Section Para */
-    .section__para {
-      font-size: var(--font-size-st-sc);
-    } 
-    /*----------*----------*----------*----------*---------- Overall Layout */
-    .container {
-      display: grid;
-      grid-template-columns:
-        [container-start] repeat(12, minmax(min-content, 12.5rem))
-        [container-end];
-    
-      grid-template-rows: repeat(9, min-content);
-      justify-content: center;
-    }
-    
-    .section__layout {
-      grid-column: container-start / container-end;
-    }
-  
-   
-    /* ------------------------------------- */
-    .header {
-      padding: var(--padding-d-m-v) var(--padding-d-l-h);
-      column-gap: 10rem;
-    }
-    
-    .header__nav--menu-icon{
-      font-size: var(--font-size-d-m);
-    }
+  /*----------*----------*----------* Section Title */
+  .section__title {
+    font-size: var(--font-size-d-mc);
+  }
 
-    .header::after {
-      content: "";
-      position: absolute;
-      bottom: -60rem;
-      left: 0rem;
-      height: 50rem;
-      width: 70%;
-      /* background-color: var(--color-primary-m); */
-      clip-path: polygon(0 20%, 90% 12%, 100% 78%, 0 74%);
-      /* clip-path: polygon(0% 70%, 90% 0%, 100% 50%, 0% 100%, 0% 0%); */
-      z-index: 10;
-    }
- 
-  
-   /*----------*----------*----------*----------*---------- Hero */
-   .hero {
+  /*----------*----------*----------* Section Para */
+  .section__para {
+    font-size: var(--font-size-st-sc);
+  }
+
+  /*----------*----------*----------*----------*---------- Overall Layout */
+  .container {
+    display: grid;
+    grid-template-columns:
+      [container-start] repeat(12, minmax(min-content, 12.5rem)) [container-end];
+
+    grid-template-rows: repeat(9, min-content);
+    justify-content: center;
+  }
+
+  .section__layout {
+    grid-column: container-start / container-end;
+  }
+
+
+  /* ------------------------------------- */
+  .header {
+    padding: var(--padding-d-m-v) var(--padding-d-l-h);
+    column-gap: 10rem;
+  }
+
+  .header__nav--menu-icon {
+    font-size: var(--font-size-d-m);
+  }
+
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -60rem;
+    left: 0rem;
+    height: 50rem;
+    width: 70%;
+    /* background-color: var(--color-primary-m); */
+    clip-path: polygon(0 20%, 90% 12%, 100% 78%, 0 74%);
+    /* clip-path: polygon(0% 70%, 90% 0%, 100% 50%, 0% 100%, 0% 0%); */
+    z-index: 10;
+  }
+
+
+  /*----------*----------*----------*----------*---------- Hero */
+  .hero {
     height: 80vh;
-  
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background: var(--color-secondary-m);
     position: relative;
   }
-  
+
   .hero__bg {
     position: absolute;
     top: 0;
@@ -73,7 +72,7 @@
     width: 100%;
     z-index: 9;
   }
-  
+
   .hero__bg img {
     height: 100%;
     width: 100%;
@@ -81,7 +80,7 @@
     opacity: .85;
   }
 
-  
+
   .hero__content {
     position: absolute;
     left: 10rem;
@@ -92,13 +91,13 @@
     gap: 3rem;
     z-index: 10;
   }
-  
+
   .hero__content--mini-title {
     color: var(--color-quaternary-m);
   }
 
-  
-  .hero__content--email-link{
+
+  .hero__content--email-link {
     writing-mode: vertical-lr;
     rotate: 180deg;
     left: 3rem;
@@ -108,8 +107,8 @@
     font-weight: 600;
     z-index: 20;
   }
-  
-  .hero__content--email-link::after{
+
+  .hero__content--email-link::after {
     content: '';
     position: absolute;
     height: 10rem;
@@ -118,17 +117,17 @@
     left: 1rem;
     top: 18rem;
   }
-  
+
   .hero__content--title {
     font-size: var(--font-size-d-l);
     color: var(--color-accent);
   }
-  
-  .hero__content--title span{
+
+  .hero__content--title span {
     text-shadow: 2px 2px 2px var(--color-secondary);
   }
-  
-  
+
+
   .hero__content--para {
     font-size: var(--font-size-st-m);
     font-weight: 600;
@@ -139,16 +138,16 @@
   .hero__content--para span {
     color: var(--color-accent);
     text-shadow: 2px 2px 2px var(--color-secondary);
-    
-    }
-  
+
+  }
+
   .hero__content--links__portfolio {
     background-color: var(--color-accent);
     color: var(--color-secondary);
   }
-  
-  
-  .hero__copy-rights--social{
+
+
+  .hero__copy-rights--social {
     position: absolute;
     right: 3rem;
     bottom: 28rem;
@@ -156,28 +155,30 @@
     z-index: 10;
     /* border: solid red 1px; */
   }
-  
-  .hero__copy-rights--social i{
-    color: var(--color-accent)!important;
+
+  .hero__copy-rights--social i {
+    color: var(--color-accent) !important;
     padding: 0.5rem;
   }
-  .hero__copy-rights--social:hover i{
+
+  .hero__copy-rights--social:hover i {
     color: var(--color-accent);
   }
-  
-  
-  .hero__copy-rights--social::after{
-  content: '';
-  position: absolute;
-  height: 10rem;
-  width: 1px;
-  background-color: var(--color-accent);
-  right: 1rem;
-  bottom: -12rem;
+
+
+  .hero__copy-rights--social::after {
+    content: '';
+    position: absolute;
+    height: 10rem;
+    width: 1px;
+    background-color: var(--color-accent);
+    right: 1rem;
+    bottom: -12rem;
   }
+
   /*----------*----------*----------*----------*---------- Personal Info */
-  
-  .about > div:first-child{  
+
+  .about>div:first-child {
     display: flex;
     justify-content: start;
     gap: 2rem;
@@ -200,9 +201,9 @@
     box-shadow: 4px 10px 4px var(--color-secondary);
     z-index: 1;
   }
-  
+
   .about__img:hover img {
-    transform: scale(0.95); 
+    transform: scale(0.95);
     filter: none;
   }
 
@@ -218,59 +219,60 @@
     box-shadow: 4px 10px 4px var(--color-secondary);
   }
 
-   
-    .about__content {
-      gap: 2rem;
-      opacity: .8;
-      margin: 0;
-      height: 100%;
-      width: 50%;
-      flex-basis: 50%;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 4px 10px 4px var(--color-secondary);
-    }
-    
-    .about__content--title{
-      line-height: 1.5;
-      font-size: var(--font-size-d-l);
-      text-align: center;
-      margin: 0;
-    }
-    
-    .about__content--title span{
-      color: var(--color-tertiary-m);
-      font-size: var(--font-size-d-m);
-      font-family: var(--font-family-title);
-    }
-    .about__content--para {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 300px;
-    }
-    
-  
-    .about__content--experience {
-      display: flex;
-      flex-direction: column;
-    } 
 
-    .about__content--experience-title{
-      font-size: var(--font-size-d-m);
-    }
+  .about__content {
+    gap: 2rem;
+    opacity: .8;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 10px 4px var(--color-secondary);
+  }
 
-    .about__content--experience div li::before {
-      font-size: var(--font-size-d-m);
-    }
-    
-    /*----------*----------*----------*----------*---------- skills */
-   
-  
+  .about__content--title {
+    line-height: 1.5;
+    font-size: var(--font-size-d-l);
+    text-align: center;
+    margin: 0;
+  }
+
+  .about__content--title span {
+    color: var(--color-tertiary-m);
+    font-size: var(--font-size-d-m);
+    font-family: var(--font-family-title);
+  }
+
+  .about__content--para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
+
+  .about__content--experience {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__content--experience-title {
+    font-size: var(--font-size-d-m);
+  }
+
+  .about__content--experience div li::before {
+    font-size: var(--font-size-d-m);
+  }
+
+  /*----------*----------*----------*----------*---------- skills */
+
+
   /*----------*----------*----------*----------*---------- Portfolio */
-  
-     /* .portfolio__info--para{
+
+  /* .portfolio__info--para{
       margin-bottom: 4rem;
      }
   
@@ -355,16 +357,16 @@
     .portfolio__card--img:hover img {
       transform: scale(0.95);
     } */
-  
+
   /*----------*----------*----------*----------*---------- Gallery */
-   
+
   .media-scroller {
     grid-auto-columns: 30%;
     width: 90vw;
   }
-  
-  /*----------*----------*----------*----------*---------- Contact */  
-    /* .contact{
+
+  /*----------*----------*----------*----------*---------- Contact */
+  /* .contact{
       flex-direction: row;
       column-gap: 10rem;
     }
@@ -389,52 +391,50 @@
       font-family: var(--font-family-content-m);
       font-size: var(--font-size-d-sc);
     } */
-    
-  
-  
+
+
+
   /*----------*----------*----------*----------*---------- Footer */
   .footer {
-      display: flex;
-      flex-direction: column;
-      gap: 4rem;
-    
-      background: linear-gradient(
-          to bottom,
-          var(--color-secondary),
-          var(--color-secondary-m)
-        ),
-        url("images/assets/conor-luddy-IVaKksEZmZA-unsplash-small.jpg");
-    
-      background-size: cover;
-      background-position: center;
-    }
-    
-    .footer__copy-rights {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
-    }
-    
-    .footer__copy-rights p,
-    .footer__copy-rights--social i {
-      font-size: var(--font-size-st-sc);
-      color: var(--color-accent);
-    }
-  
-    .footer__copy-rights p{
-      color: var(--color-tertiary);
-    }
-    
-    .footer__copy-rights--social {  
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-    }
-  
-    .footer__copy-rights--social i:hover{
-      scale: 2;
-      color: var(--color-tertiary-m);
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    background: linear-gradient(to bottom,
+        var(--color-secondary),
+        var(--color-secondary-m)),
+      url("images/assets/conor-luddy-IVaKksEZmZA-unsplash-small.jpg");
+
+    background-size: cover;
+    background-position: center;
   }
+
+  .footer__copy-rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer__copy-rights p,
+  .footer__copy-rights--social i {
+    font-size: var(--font-size-st-sc);
+    color: var(--color-accent);
+  }
+
+  .footer__copy-rights p {
+    color: var(--color-tertiary);
+  }
+
+  .footer__copy-rights--social {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .footer__copy-rights--social i:hover {
+    scale: 2;
+    color: var(--color-tertiary-m);
+  }
+}
