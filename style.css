@@ -818,10 +818,8 @@ img {
   padding: 1rem;
 }
 
-
-
-.portfolio__card--img>img {
-  width: 80vw;
+.portfolio__card--img > img {
+  width: 30rem;
   height: 30rem;
   aspect-ratio: 16 / 9;
   object-fit: cover;
