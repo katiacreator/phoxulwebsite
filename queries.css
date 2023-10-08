@@ -220,8 +220,8 @@
 
   .portfolio__card-scroller {
     grid-column: 2/ -1;
-    width: 45vw;
-    height: 45vw;
+    width: 35rem;
+    height: 35rem;
   }
 
 
@@ -254,24 +254,15 @@
   .contact__title {
     position: relative;
   }
-/* 
-  .contact__title:before {
-    content: '';
-    top: 3rem;
-    left: -33rem;
-    width: 70%;
-    height: .2rem;
-    background-color: var(--color-secondary);
-    position: absolute;
+
+}
+
+@media screen and (min-width: 900px) {
+  .portfolio__card--content{
+    width: 45vw;
   }
 
-  .contact__title:after {
-    content: '';
-    top: 3rem;
-    right: -33rem;
-    width: 70%;
-    height: .2rem;
-    background-color: var(--color-secondary);
-    position: absolute;
-  } */
+  .portfolio__card-scroller{
+    width: 45vw;
+  }
 }

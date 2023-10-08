@@ -172,7 +172,7 @@
 
   /*----------*----------*----------*----------*---------- Personal Info */
 
-  .about>div:first-child {
+  .about > div:first-child {
     display: flex;
     justify-content: start;
     gap: 2rem;
@@ -255,96 +255,31 @@
 
   /*----------*----------*----------*----------*---------- Portfolio */
 
-  /* .portfolio__info--para{
-      margin-bottom: 4rem;
-     }
+  .portfolio__card--content__mini-title {
+    
+    padding: 1rem;
+  }
+
+  .portfolio__card--content{
+    height: 40rem;
+  }
+
+  .portfolio__card--content__para {
+    font-size: var(--font-size-st-m);
+  }
   
-    .portfolio__cards-container{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-  
-    .portfolio__card {
-      width: 50vw;
-    }
+  .portfolio__card--content__link {
+    font-size: var(--font-size-st-sc);
+    padding: 1rem 1.2rem;
+  }
+  .portfolio__card-scroller{
+    height: 40rem;
+  }
     
-    .portfolio__card--content {
-      width: 400px;
-      height: 400px;
-      background-color: var(--color-quaternary);
-      padding: var(--padding-st-l-h);
-      z-index: 1;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);;
-      rotate: -5deg;
-    }
-    
-    
-    
-    .portfolio__card--content__title {
-      font-size: var(--font-size-st-xl)!important;
-      font-weight: 800;
-      line-height: 1;
-      left: -1rem;
-      color: var(--color-secondary);
-      grid-column: 1/ span 2;
-      margin-top: 2rem;
-    }
-    
-    .portfolio__card--content__para{
-      grid-column: 1/ span 2;
-      padding: 1rem;
-      font-weight: 400;
-    }
-    .portfolio__card--content__mini-titles {
-      bottom: 2rem;
-      left: 2rem;
-    }
-    .portfolio__card--content__mini-title {
-      background-color: var(--color-tertiary-m);
-      color: var(--color-secondary);
-      border: 1px solid var(--color-secondary-m);
-      box-shadow: 1px 2px 2px var(--color-secondary);
-    }
-    .portfolio__card--content__links {
-      justify-content: start;
-      gap: 1rem;
-      border-top: 1px solid var(--color-secondary-m);
-      margin: 1rem;
-    }
-    
-    
-    .portfolio__card--content__link {
-      padding: var(--padding-st-s-v);
-    }
-    
-    
-    .portfolio__card--content__link:hover{
-      scale:1.3;
-    }
-    
-    .portfolio__card--img {
-      position: absolute;
-      left: 45rem;
-      rotate: 5deg;
-    }
-    
-    .portfolio__card--img img {
-      width: 400px;
-      height: 400px;
-      transition: all 0.6s ease-in-out;
-    }
-    
-    .portfolio__card--img:hover img {
-      transform: scale(0.95);
-    } */
 
   /*----------*----------*----------*----------*---------- Gallery */
 
   .media-scroller {
-    grid-auto-columns: 30%;
     width: 90vw;
   }
 
