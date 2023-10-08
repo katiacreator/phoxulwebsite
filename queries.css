@@ -193,18 +193,21 @@
 
   .portfolio__card--content {
     grid-column: 1/2;
-    width: 40vw;
+    width: 35rem;
+    height: 35rem;
+    height: min-content;
+    background-color: var(--color-quaternary);
+    padding: var(--padding-st-l-h);
   }
 
   .portfolio__card--content__mini-title,
   .portfolio__card--content__link {
     padding: .5rem;
-    font-size: var(--font-size-d-s);
+    font-size: var(--font-size-st-s);
   }
 
-  .portfolio__info--para,
   .portfolio__cards--container {
-    padding: 0 5rem;
+    padding: 3rem;
   }
 
   .portfolio__card--content__title {
@@ -212,12 +215,13 @@
   }
 
   .portfolio__card--content__para {
-    font-size: var(--font-size-d-s);
+    font-size: var(--font-size-st-sc);
   }
 
   .portfolio__card-scroller {
     grid-column: 2/ -1;
     width: 45vw;
+    height: 45vw;
   }
 
 
