@@ -546,7 +546,7 @@ img {
   font-weight: 900;
   letter-spacing: .3rem;
   text-align: center;
-  width: 100%;
+  width: 30rem;
   background-color: var(--color-tertiary-m);
   color: var(--color-secondary);
   z-index: 9;
@@ -619,7 +619,7 @@ img {
 
 .about__img img {
   height: 80%;
-  width: 80%;
+  width: 28rem;
   object-fit: cover;
   box-shadow: 4px 4px 4px var(--color-secondary);
   transition: all 0.6s ease-in-out;
