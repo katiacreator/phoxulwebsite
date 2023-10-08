@@ -15,7 +15,8 @@
   font-size: 62.5%;
 
   /*----------*----------*----------* Website Theme */
-  --color-accent: rgb(255, 0, 102);
+  --color-accent: rgb(255, 0, 98);
+  --color-turmeric: rgb(255, 191, 0);
   --color-accent-m: rgb(248, 169, 198);
   --color-primary: hsl(200, 3%, 35%);
 
@@ -328,30 +329,13 @@ img {
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
-  height: 100vh;
-  padding-bottom: 15rem;
+  height: 80rem;
+  padding-bottom: 5rem;
   margin-bottom: -10rem;
   position: relative;
   background-color: var(--color-secondary-n);
 }
 
-
-.hero__bg {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
-  width: 90%;
-  z-index: -1;
-}
-
-.hero__bg img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  opacity: .65;
-}
 
 .hero__bg {
   position: absolute;
@@ -381,7 +365,7 @@ img {
   text-align: center;
   margin-top: 10rem;
   padding-top: var(--padding-d-mc-v);
-  height: 100vh;
+  height: 100%;
   z-index: 10;
 }
 
@@ -396,7 +380,7 @@ img {
   font-family: var(--font-family-title);
   font-size: var(--font-size-d-lc);
   color: var(--color-accent);
-  text-shadow: 1px 1px 1px var(--color-quaternary);
+  text-shadow: 1px 1px 1px var(--color-secondary);
   text-transform: uppercase;
   line-height: 1;
 }
@@ -407,6 +391,7 @@ img {
 
 .hero__content--title span:nth-child(2) {
   color: var(--color-tertiary-m);
+
 }
 
 .hero__content--para {
@@ -416,7 +401,6 @@ img {
 
 .hero__content--para span {
   color: var(--color-accent);
-  /* text-shadow: 1px 1px 1px var(--color-quaternary-m); */
   font-weight: 700;
   font-size: larger;
 }
@@ -430,25 +414,24 @@ img {
 .hero__content--links__portfolio {
   flex-basis: 100%;
   padding: var(--padding-st-s-v) var(--padding-st-m-h);
+  width: 100%;
   font-size: var(--font-size-st-sc);
   font-weight: 900;
   letter-spacing: .3rem;
   text-align: center;
-  background-color: var(--color-accent-m);
+  background-color: var(--color-tertiary);
   color: var(--color-secondary);
-  width: 100%;
 }
 
 .hero__copy-rights--social {
   position: absolute;
-  bottom: 15rem;
+  bottom: 25rem;
 }
 
 .hero__copy-rights--social i {
   font-size: var(--font-size-d-m);
   scale: 1.2;
   padding: 0 1rem;
-  margin-top: -2rem;
 }
 
 .hero__copy-rights--social i:first-child,
@@ -517,7 +500,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background: var(--color-quaternary-m);
+  background: var(--color-secondary);
   opacity: .8;
   padding: 2rem;
   box-shadow: 4px 4px 4px var(--color-secondary);
@@ -538,7 +521,7 @@ img {
 
 
 .about__content--para {
-  color: var(--color-secondary);
+  color: var(--color-quaternary-m);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -574,7 +557,7 @@ img {
 }
 
 .about__content--links__resume:hover {
-  background-color: transparent;
+  background-color: var(--color-quaternary-m);
   border: solid 1px var(--color-tertiary-m);
 }
 
@@ -601,7 +584,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: var(--color-quaternary);
+  background: var(--color-secondary);
 }
 
 .about__content--experience-title {
@@ -617,11 +600,11 @@ img {
   padding: 0.5rem;
   color: var(--color-tertiary-m);
 
-  font-size: var(--font-size-d-l);
+  font-size: var(--font-size-d-m);
 }
 
 .about__content--experience .section__para {
-  color: var(--color-secondary);
+  color: var(--color-quaternary-m);
   display: flex;
   gap: 0.2rem;
 }
@@ -789,10 +772,11 @@ img {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: auto;
-  padding: 0 .5rem 1rem;
+  padding: 0 0.5rem 1rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   width: 90vw;
+  align-content: center;
 }
 
 /* Track */
@@ -865,11 +849,11 @@ img {
   display: grid;
   gap: 3rem;
   grid-auto-flow: column;
-  grid-auto-columns: 99%;
+  grid-auto-columns: auto;
   padding: 0 .5rem 1rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  width: 90vw;
+  width: 28rem;
 }
 
 .media-scroller ::-webkit-scrollbar {
@@ -899,8 +883,8 @@ img {
 }
 
 .media-element>img {
-  width: 85vw;
-  height: 30rem;
+  width: 20rem;
+  height: 20rem;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   box-shadow: 2px 2px 4px var(--color-secondary);
@@ -983,6 +967,7 @@ img {
 .contact--email-link:hover {
   font-weight: 600;
 }
+
 
 
 /*----------*----------*----------*----------*---------- Footer */
