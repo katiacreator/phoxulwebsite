@@ -487,6 +487,7 @@ img {
 .about__title {
   font-size: var(--font-size-d-lc);
   text-align: center;
+  color: var(--color-secondary);
 }
 
 .about div:first-child {
@@ -516,7 +517,9 @@ img {
   color: var(--color-tertiary-m);
   display: flex;
   flex-direction: column;
-  border-bottom: solid 1px var(--color-secondary);
+}
+.about__content--title span:nth-child(2){
+  font-size: var(--font-size-d-m);
 }
 
 
@@ -541,12 +544,13 @@ img {
 }
 
 .about__content--links__resume {
+  margin-top: 2rem;
   padding: var(--padding-st-s-v) var(--padding-st-m-h);
   font-size: var(--font-size-d-m);
   font-weight: 900;
   letter-spacing: .3rem;
   text-align: center;
-  width: 30rem;
+  width: 28rem;
   background-color: var(--color-tertiary-m);
   color: var(--color-secondary);
   z-index: 9;
@@ -626,10 +630,6 @@ img {
   z-index: -1;
 }
 
-.about__img:hover img {
-  transform: scale(0.95);
-  filter: grayscale();
-}
 
 /*----------*----------*----------*----------*---------- skills */
 
@@ -978,9 +978,7 @@ img {
 
   background: linear-gradient(to bottom,
       var(--color-secondary),
-      var(--color-secondary-m)),
-    url("images/assets/conor-luddy-IVaKksEZmZA-unsplash-small.jpg");
-
+      var(--color-secondary-m));
   background-size: cover;
   background-position: center;
 }

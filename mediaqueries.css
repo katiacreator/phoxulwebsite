@@ -45,7 +45,8 @@
     left: 0rem;
     height: 50rem;
     width: 70%;
-    /* background-color: var(--color-primary-m); */
+    background-color: var(--color-tertiary);
+
     clip-path: polygon(0 20%, 90% 12%, 100% 78%, 0 74%);
     /* clip-path: polygon(0% 70%, 90% 0%, 100% 50%, 0% 100%, 0% 0%); */
     z-index: 10;
@@ -96,12 +97,15 @@
     color: var(--color-quaternary-m);
   }
 
+  .hero__content--links__portfolio {
+    background-color: var(--color-accent-m);
+  }
 
   .hero__content--email-link {
     writing-mode: vertical-lr;
     rotate: 180deg;
     left: 3rem;
-    bottom: 22rem;
+    bottom: 10rem;
     font-size: var(--font-size-st-sc);
     color: var(--color-secondary);
     font-weight: 600;
@@ -184,7 +188,7 @@
   .about__img {
     position: absolute;
     top: 15rem;
-    right: -25rem;
+    right: -5rem;
   }
 
   .about__img img {
