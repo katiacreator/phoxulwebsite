@@ -263,25 +263,19 @@
   /*----------*----------*----------*----------*---------- Portfolio */
 
   .portfolio__card--content__mini-title {
-    
     padding: 1rem;
   }
 
-  .portfolio__card--content{
-    height: 40rem;
-  }
 
   .portfolio__card--content__para {
-    font-size: var(--font-size-st-m);
+    font-size: var(--font-size-st-sc);
   }
   
   .portfolio__card--content__link {
     font-size: var(--font-size-st-sc);
     padding: 1rem 1.2rem;
   }
-  .portfolio__card-scroller{
-    height: 40rem;
-  }
+
     
 
   /*----------*----------*----------*----------*---------- Gallery */
@@ -327,8 +321,7 @@
 
     background: linear-gradient(to bottom,
         var(--color-secondary),
-        var(--color-secondary-m)),
-      url("images/assets/conor-luddy-IVaKksEZmZA-unsplash-small.jpg");
+        var(--color-secondary-m));
 
     background-size: cover;
     background-position: center;
@@ -368,7 +361,7 @@
   .header::after {
     content: "";
     position: absolute;
-    bottom: -80rem;
+    bottom: -60rem;
     left: 0rem;
     height: 70rem;
     width: 70%;
@@ -378,6 +371,25 @@
 
   .hero__copy-rights--social {
     right: 8rem;
+    bottom: 30rem;
+
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -80rem;
+    left: 0rem;
+    height: 80rem;
+    width: 70%;
+    clip-path: polygon(0 20%, 90% 12%, 100% 78%, 0 74%);
+    z-index: 10;
+  }
+
+  .hero__copy-rights--social {
+    right: 13rem;
     bottom: 30rem;
 
   }

@@ -487,7 +487,7 @@ img {
 .about__title {
   font-size: var(--font-size-d-lc);
   text-align: center;
-  color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 .about div:first-child {
@@ -746,6 +746,7 @@ img {
   color: var(--color-secondary);
   font-family: var(--font-family-content);
   font-size: var(--font-size-d-m);
+  line-height: 1.5;
 }
 
 .portfolio__card--content__links {
