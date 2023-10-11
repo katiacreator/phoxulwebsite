@@ -109,7 +109,7 @@
   
   .about__content--links__resume {
     padding: .3rem;
-    font-size: var(--font-size-d-s);
+    font-size: var(--font-size-st-m);
   }
 
   .about__content {
@@ -141,7 +141,7 @@
   }
 
   .about__content--experience div li::before {
-    font-size: var(--font-size-d-s);
+    font-size: var(--font-size-st-m);
   }
 
  
@@ -254,6 +254,10 @@
 
   .contact__title {
     position: relative;
+  }
+
+  .contact__info--para{
+    width: 30rem;
   }
 
 }

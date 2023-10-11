@@ -15,14 +15,6 @@
 
   /*----------*----------*----------*----------*---------- Overall Layout */
   .container {
-    /* display: grid;
-    grid-template-columns:
-      [container-start] repeat(12, minmax(min-content, 12.5rem)) [container-end];
-
-    grid-template-rows: repeat(9, min-content);
-    justify-self: center;
-    width: 100rem; */
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border: solid 1px red;
+    /* border: solid 10px red; */
   }
 
 
@@ -73,13 +65,14 @@
     align-items: center;
     background: var(--color-secondary-m);
     position: relative;
+    margin-bottom: 10rem;
   }
 
   .hero__bg {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(-18%);
+    transform: translateX(-24%);
     height: 100%;
     width: 100%;
     z-index: 9;
@@ -89,7 +82,6 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
-    opacity: .95;
   }
 
 
@@ -185,6 +177,9 @@
   }
 
   /*----------*----------*----------*----------*---------- Personal Info */
+  .about{
+    margin-top: -10rem;
+  }
 
   .about > div:first-child {
     display: flex;
@@ -219,41 +214,41 @@
 
   .about__content {
     gap: 2rem;
+    margin-bottom: 5rem;
     opacity: .8;
-    margin: 0;
     height: 100%;
-    width: 50%;
-    flex-basis: 50%;
+    width: 45rem;
     flex-direction: column;
     align-items: center;
     box-shadow: 4px 10px 4px var(--color-secondary);
   }
-
+  
   .about__content--title {
     line-height: 1.5;
     font-size: var(--font-size-d-l);
     text-align: center;
     margin: 0;
   }
-
+  
   .about__content--title span {
     color: var(--color-tertiary-m);
     font-size: var(--font-size-d-m);
     font-family: var(--font-family-title);
   }
-
+  
   .about__content--para {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 35rem;
   }
-
-
+  
+  
   .about__content--experience {
     display: flex;
     flex-direction: column;
+    width: 35rem;
   }
 
   .about__content--experience-title {
@@ -261,12 +256,21 @@
   }
 
   .about__content--experience div li::before {
-    font-size: var(--font-size-d-m);
+    /* font-size: var(--font-size-st-s); */
   }
 
  
 
   /*----------*----------*----------*----------*---------- skills */
+
+  .skills{
+    background-color: var(--color-secondary);
+    margin-top: -4rem;
+  }
+
+  .skills__list{
+    color: var(--color-quaternary);
+  }
 
 
   /*----------*----------*----------*----------*---------- Portfolio */
@@ -289,6 +293,10 @@
     padding: 1rem;
   }
 
+
+  .portfolio__card--content__title {
+    font-size: var(--font-size-d-m);
+  }
 
   .portfolio__card--content__para {
     font-size: var(--font-size-st-sc);
@@ -331,6 +339,7 @@
 
     background-size: cover;
     background-position: center;
+    width: 100vw;
   }
 
   .footer__copy-rights {
@@ -388,10 +397,26 @@
     z-index: 10;
   }
 
+
+  .hero__bg {
+    transform: translateX(-30%);
+  }  
   .hero__copy-rights--social {
     right: 8rem;
     bottom: 30rem;
+  }
 
+  .portfolio__cards--container{
+    width: 100%;
+  }
+
+  .media-scroller{
+    width: 100%;
+  }
+
+  .contact__info--para{
+    width: 50rem;
+    font-size: var(--font-size-d-s);
   }
 }
 
@@ -405,9 +430,16 @@
     width: 70%;
     clip-path: polygon(0 20%, 90% 12%, 100% 78%, 0 74%);
     z-index: 10;
-    /* background-color: red; */
   }
 
+
+  .portfolio__card{
+    width: 130rem;
+  }
+
+  .portfolio__card--content{
+    width: 50%;
+  }
   .hero__copy-rights--social {
     right: 13rem;
     bottom: 30rem;
