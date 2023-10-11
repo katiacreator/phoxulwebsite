@@ -189,22 +189,22 @@
     position: absolute;
     top: 15rem;
     right: -5rem;
+    width: 60rem;
   }
 
   .about__img img {
-    height: 60%;
-    width: 40%;
     object-fit: cover;
     transition: all 0.6s ease-in-out;
     box-shadow: 4px 10px 4px var(--color-secondary);
-    z-index: 1;
   }
 
   .about__img:hover img {
     transform: scale(0.95);
-    filter: none;
   }
 
+  .about__content--links__resume {
+    width: 28rem;
+  }
 
   .about__content {
     gap: 2rem;
@@ -253,14 +253,26 @@
     font-size: var(--font-size-d-m);
   }
 
-  .about__content--links__resume {
-    width: 60%;
-  }
+ 
 
   /*----------*----------*----------*----------*---------- skills */
 
 
   /*----------*----------*----------*----------*---------- Portfolio */
+
+  .portfolio__cards--container{
+    width: 95rem;
+  }
+
+
+  .portfolio__card{
+    gap: 6rem;
+  }
+
+  .portfolio__card--content {
+    width: 40rem;
+    height: 40rem;
+  }
 
   .portfolio__card--content__mini-title {
     padding: 1rem;
@@ -273,10 +285,14 @@
   
   .portfolio__card--content__link {
     font-size: var(--font-size-st-sc);
-    padding: 1rem 1.2rem;
+
   }
 
-    
+  .portfolio__card-scroller {
+    width: 45rem;
+    height: 35rem;
+  }
+
 
   /*----------*----------*----------*----------*---------- Gallery */
 
@@ -284,33 +300,11 @@
     width: 90vw;
   }
 
+  .media-element > img {
+    width: 40rem;
+  }
   /*----------*----------*----------*----------*---------- Contact */
-  /* .contact{
-      flex-direction: row;
-      column-gap: 10rem;
-    }
-    .contact__info { 
-      display: flex;
-      flex-direction: column;
-      flex-basis: 50%;
-    }
-    
-    .contact__info--title {
-      font-size: var(--font-size-st-mc);
-    }
   
-  
-    
-    form {
-      flex-basis: 40%;
-      gap: 4rem;
-    }
-    
-    .contact__form--title{
-      font-family: var(--font-family-content-m);
-      font-size: var(--font-size-d-sc);
-    } */
-
 
 
   /*----------*----------*----------*----------*---------- Footer */
@@ -357,7 +351,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .header::after {
     content: "";
     position: absolute;
@@ -393,4 +387,4 @@
     bottom: 30rem;
 
   }
-}
+} */
